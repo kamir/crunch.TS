@@ -1,18 +1,30 @@
 crunch.TS
 =========
 
-Apache Hadoop is a great place for time series processing. 
+The goal of Crunch.TS is to implement reusable data structures for several "standard time series" algorithms.
 
-"Sessionization" or creation of "Event-Series" from data, collected via Flume,
-is a first step towards advanced time series analysis. 
+There are at least two groups or types of time series: "continuos equidistant time series" and "event time series". 
+Both can be converted into each other (if certain conditions are met), but therefore some metadata is required.
 
-This project contributes several implementations like:
+Especially for correlation analysis and fluctuation analysis one should to do some consistency checks before the 
+expensive calculations are started. In order make such operations fast and reliable, Crunch.TS implements generic 
+time series representations for both types of time series, as well a the conversion functions as Crunch DoFn. 
+
+Univariate time series analysis is done on individual time series representing a property of one object. From 
+multivariate time series analysis algorithms one can get correlation- and dependency-networks. Such algorithms
+can also be seen as a kind of graph-generators which transform a time series bucket into a network layer.
+
+Another use case is "sessionization" of weblogs or creation of "event series" from data, collected via Flume. 
+Our generic data structures should be used to direct the event flow and to create time series buckets. This is
+a very first step towards advanced time series analysis topics. 
+
+This project contributes the following algorithm: 
 
 * Detrendet Fluctuation Analysis (DFA)
-* Cross-Correlation Analysis (CC)
 * Return-Intervall-Statistics (RIS)
+* Cross-Correlation Analysis (CC)
 
-to Apache Crunch. Using the Spark, in Memory or MapReduce pipeline, one
+to Apache Crunch. Using the Spark-, in Memory or MapReduce-Pipeline, one
 can do several analysis steps on a Workstation or in a large cluster.
  
 
