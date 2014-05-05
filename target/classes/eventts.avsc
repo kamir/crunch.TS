@@ -1,0 +1,35 @@
+{
+ "type"      : "record",
+ "namespace" : "de.bitocean.crunchts.data",
+ "name"      : "EventTSRecord",
+ "fields": [
+      {
+	      "name": "eventArray",
+		  "type": {
+		    "type": "array",
+		    "items": {
+		      "name": "Event",
+		      "type": "record",
+		      "fields": [
+	              {"name": "timestamp", "type": "long"},
+	              {"name": "uri", "type": "string"},
+	              {"name": "value", "type": "double"}
+	          ]
+	        }
+          }
+      },
+      {
+	      "name" : "label",
+	      "type" : "string"
+	  }, 
+	  {
+	      "name" : "tStart",
+	      "type" : "long"
+	  }, 
+	  {
+	      "name" : "tEnd",
+	      "type" : "long"
+	  }
+ ]
+}
+   

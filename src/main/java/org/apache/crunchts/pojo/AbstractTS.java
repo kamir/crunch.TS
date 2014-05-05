@@ -2,12 +2,12 @@ package org.apache.crunchts.pojo;
 
 public class AbstractTS {
 	
-	String label;
+	protected String label;
 	
-	long tStart = 0;
-	long tEnd = 0;
+	protected long tStart = 0;
+	protected long tEnd = 0;
 	
-	int zValues = 0;
+	protected int zValues = 0;
 	
 	public long getLength() {
 		return tEnd - tStart;
@@ -15,6 +15,6 @@ public class AbstractTS {
 	
 	public String getLabel() {
 		return label;
-	}	
+	}		
 
 }
