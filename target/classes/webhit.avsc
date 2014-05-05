@@ -1,0 +1,15 @@
+{
+  "type" : "record",
+  "name" : "WebHit",
+  "namespace" : "com.loudacre.data",
+  "fields" : [ {
+    "name" : "accountId",
+    "type" : "string"
+  }, {
+    "name" : "pageHit",
+    "type" : "string"
+  }, {
+    "name" : "hitTimestamp",
+    "type" : "long"
+  } ]
+}

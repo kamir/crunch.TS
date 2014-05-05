@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="0.032" errors="3" skipped="0" tests="3" name="de.bitocean.crunchts.sessionization.KnowledgeBaseSessionizationTest">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/java/jdk1.6.0_31/jre/lib/amd64"/>
+    <property name="java.vm.version" value="20.6-b01"/>
+    <property name="java.vm.vendor" value="Sun Microsystems Inc."/>
+    <property name="java.vendor.url" value="http://java.sun.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/training/workspace/crunch.TS"/>
+    <property name="java.runtime.version" value="1.6.0_31-b04"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/java/jdk1.6.0_31/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/local/apache-maven/apache-maven-3.1.1/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/jdk1.6.0_31/jre/lib/amd64/server:/usr/java/jdk1.6.0_31/jre/lib/amd64:/usr/java/jdk1.6.0_31/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="50.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="2.6.32-431.11.2.el6.x86_64"/>
+    <property name="user.home" value="/home/training"/>
+    <property name="user.timezone" value="US/Pacific"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.6"/>
+    <property name="user.name" value="training"/>
+    <property name="java.class.path" value="/usr/local/apache-maven/apache-maven-3.1.1/boot/plexus-classworlds-2.5.1.jar"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="java.vm.specification.version" value="1.0"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/java/jdk1.6.0_31/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean compile package -U"/>
+    <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.language" value="en"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.6.0_31"/>
+    <property name="java.ext.dirs" value="/usr/java/jdk1.6.0_31/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/java/jdk1.6.0_31/jre/lib/resources.jar:/usr/java/jdk1.6.0_31/jre/lib/rt.jar:/usr/java/jdk1.6.0_31/jre/lib/sunrsasign.jar:/usr/java/jdk1.6.0_31/jre/lib/jsse.jar:/usr/java/jdk1.6.0_31/jre/lib/jce.jar:/usr/java/jdk1.6.0_31/jre/lib/charsets.jar:/usr/java/jdk1.6.0_31/jre/lib/modules/jdk.boot.jar:/usr/java/jdk1.6.0_31/jre/classes"/>
+    <property name="java.vendor" value="Sun Microsystems Inc."/>
+    <property name="maven.home" value="/usr/local/apache-maven/apache-maven-3.1.1"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase time="0.03" classname="de.bitocean.crunchts.sessionization.KnowledgeBaseSessionizationTest" name="testWebLogSessionizationFn">
+    <error message="Unresolved compilation problems: 
+	The import com.loudacre.data.WebHit cannot be resolved
+	WebHit cannot be resolved to a type
+	Bound mismatch: The generic method specifics(Class&lt;T&gt;) of type Avros is not applicable for the arguments (Class&lt;WebHit&gt;). The inferred type WebHit is not a valid substitute for the bounded parameter &lt;T extends SpecificRecord&gt;
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	The constructor Pair&lt;String,Pair&lt;Long,WebHit&gt;&gt;(String, Pair&lt;Long,WebHit&gt;) refers to the missing type WebHit
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+" type="java.lang.Error">java.lang.Error: Unresolved compilation problems: 
+	The import com.loudacre.data.WebHit cannot be resolved
+	WebHit cannot be resolved to a type
+	Bound mismatch: The generic method specifics(Class&lt;T&gt;) of type Avros is not applicable for the arguments (Class&lt;WebHit&gt;). The inferred type WebHit is not a valid substitute for the bounded parameter &lt;T extends SpecificRecord&gt;
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	The constructor Pair&lt;String,Pair&lt;Long,WebHit&gt;&gt;(String, Pair&lt;Long,WebHit&gt;) refers to the missing type WebHit
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+
+	at de.bitocean.crunchts.sessionization.KnowledgeBaseSessionizationTest.&lt;init&gt;(KnowledgeBaseSessionizationTest.java:18)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:209)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:258)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:255)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase time="0.001" classname="de.bitocean.crunchts.sessionization.KnowledgeBaseSessionizationTest" name="testMostHelpfulFn">
+    <error message="Unresolved compilation problems: 
+	The import com.loudacre.data.WebHit cannot be resolved
+	WebHit cannot be resolved to a type
+	Bound mismatch: The generic method specifics(Class&lt;T&gt;) of type Avros is not applicable for the arguments (Class&lt;WebHit&gt;). The inferred type WebHit is not a valid substitute for the bounded parameter &lt;T extends SpecificRecord&gt;
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	The constructor Pair&lt;String,Pair&lt;Long,WebHit&gt;&gt;(String, Pair&lt;Long,WebHit&gt;) refers to the missing type WebHit
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+" type="java.lang.Error">java.lang.Error: Unresolved compilation problems: 
+	The import com.loudacre.data.WebHit cannot be resolved
+	WebHit cannot be resolved to a type
+	Bound mismatch: The generic method specifics(Class&lt;T&gt;) of type Avros is not applicable for the arguments (Class&lt;WebHit&gt;). The inferred type WebHit is not a valid substitute for the bounded parameter &lt;T extends SpecificRecord&gt;
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	The constructor Pair&lt;String,Pair&lt;Long,WebHit&gt;&gt;(String, Pair&lt;Long,WebHit&gt;) refers to the missing type WebHit
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+
+	at de.bitocean.crunchts.sessionization.KnowledgeBaseSessionizationTest.&lt;init&gt;(KnowledgeBaseSessionizationTest.java:18)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:209)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:258)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:255)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase time="0.001" classname="de.bitocean.crunchts.sessionization.KnowledgeBaseSessionizationTest" name="testMostHelpfulFnWithMultipleSessions">
+    <error message="Unresolved compilation problems: 
+	The import com.loudacre.data.WebHit cannot be resolved
+	WebHit cannot be resolved to a type
+	Bound mismatch: The generic method specifics(Class&lt;T&gt;) of type Avros is not applicable for the arguments (Class&lt;WebHit&gt;). The inferred type WebHit is not a valid substitute for the bounded parameter &lt;T extends SpecificRecord&gt;
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	The constructor Pair&lt;String,Pair&lt;Long,WebHit&gt;&gt;(String, Pair&lt;Long,WebHit&gt;) refers to the missing type WebHit
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+" type="java.lang.Error">java.lang.Error: Unresolved compilation problems: 
+	The import com.loudacre.data.WebHit cannot be resolved
+	WebHit cannot be resolved to a type
+	Bound mismatch: The generic method specifics(Class&lt;T&gt;) of type Avros is not applicable for the arguments (Class&lt;WebHit&gt;). The inferred type WebHit is not a valid substitute for the bounded parameter &lt;T extends SpecificRecord&gt;
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	The constructor Pair&lt;String,Pair&lt;Long,WebHit&gt;&gt;(String, Pair&lt;Long,WebHit&gt;) refers to the missing type WebHit
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	The method createWebHitPair(String, long, String) from the type KnowledgeBaseSessionizationTest refers to the missing type WebHit
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+	WebHit cannot be resolved to a type
+
+	at de.bitocean.crunchts.sessionization.KnowledgeBaseSessionizationTest.&lt;init&gt;(KnowledgeBaseSessionizationTest.java:18)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:209)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:258)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:255)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+</testsuite>
