@@ -18,11 +18,11 @@ Another use case is "sessionization" of weblogs or creation of "event series" fr
 Our generic data structures should be used to direct the event flow and to create time series buckets. This is
 a very first step towards advanced time series analysis topics. 
 
-This project contributes the following algorithm: 
+This project contributes the following algorithms: 
 
 * Detrendet Fluctuation Analysis (DFA)
 * Return-Intervall-Statistics (RIS)
-* Cross-Correlation Analysis (CC)
+* Cross-Correlation Analysis (CC) for a) correlation and b) dependency networks.
 
 to Apache Crunch. Using the Spark-, in Memory or MapReduce-Pipeline, one
 can do several analysis steps on a Workstation or in a large cluster.

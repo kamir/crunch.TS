@@ -53,7 +53,7 @@ public class ConvertTSBucket extends CrunchTool {
 		PObject<Double> min = hitCounts.min();
 		
 		System.out.println( "# of records: " + zRecords.getValue() );
-		System.out.println( "min count: " + min.getValue() );
+		System.out.println( "min count   : " + min.getValue() );
 		System.out.println( "max count   : " + max.getValue() );
 
 		AvroFileTarget target = new AvroFileTarget( new Path( args[1] ) );
