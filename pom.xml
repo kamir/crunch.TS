@@ -71,8 +71,7 @@
           <archive>
             <manifest>
               <!-- What is the Main-Class to run? -->
-              <!-- >mainClass>de.bitocean.crunchts.simple.ConvertTSBucket</mainClass-->
-              <mainClass>de.bitocean.crunchts.simple.ExtractEventTimeSeriesFromTSBucket</mainClass>
+              <mainClass>org.apache.crunchts.CrunchTSApp</mainClass>
             </manifest>
           </archive>
         </configuration>

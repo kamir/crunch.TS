@@ -1,6 +1,6 @@
 {
  "type"      : "record",
- "namespace" : "de.bitocean.crunchts.data",
+ "namespace" : "org.apache.crunchts.types",
  "name"      : "EventTSRecord",
  "fields": [
       {

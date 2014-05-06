@@ -1,8 +1,15 @@
 package org.apache.crunchts.pojo;
 
-import java.util.Iterator;
-import org.apache.mahout.math.Vector.Element;
-import org.apache.mahout.math.VectorWritable;
+import java.util.ArrayList;
+import java.util.Hashtable;
+import java.util.Date;
+import java.awt.List;
+import java.net.URI;
+
+import org.apache.crunch.MapFn;
+import org.apache.crunch.types.writable.Writables;
+import org.apache.crunchts.types.EventTSRecord;
+import org.apache.crunchts.types.Event;
 
 public class EventTS extends AbstractTS {
 	
@@ -11,47 +18,97 @@ public class EventTS extends AbstractTS {
 	Hashtable<Date,Double> values;
 	Hashtable<Date,URI> tags;
 	
-	
-	double sr = 1.0;  					   // default: 1.0 Hz; one per second
-	double[] points = null;
-	
-	public void setData( VectorWritable vector, String label, long t0 ) {
+	public void setData( 
+			Hashtable<Date,Double> v, 
+			Hashtable<Date,URI> t, 
+			String label, 
+			Date s, 
+			Date e ) {
+		
 		super.label = label;
-		super.tStart = t0;
-		setData( vector, default_sr, label );
+		values = v;
+		tags = t;
+
+	    super.tStart = s.getTime();
+	    super.tEnd = e.getTime();
 	}
 	
 	/**
-	 * Conversion of a Vector into an array of doubles.
-	 *  
-	 * @param VectorWritable vector
-	 * @param double customSR
+	 * Mapping of an Avro record to a POJO.
+	 * 
+	 * @param v
 	 */
-	public void setData( VectorWritable vector, double customSR, String label ) {
-		sr = customSR;		
-		points = new double[vector.get().size()];
-			
-		int c = 0;
-	    Iterator<Element> i = vector.get().iterator();
-	    while( i.hasNext() ) {
-			points[c] = i.next().get(); 
-			c++;
-		}
-	    
-	    double dist = sr * 1000.0 * (double)c; // length of ts in s
-	    super.tEnd = super.tStart + (long)dist;
+	public void setData( EventTSRecord record ) { 
+				
+	};
+
+	/** 
+	 * If no record is available and testmode is on,
+	 * we create a random record on the fly.
+	 * 
+	 * @return EventTSRecord
+	 */
+	public EventTSRecord getRecord() {
+		if (values == null) return getDefaultRandomRecord( 10 );
+		else return createRecord();
 	}
-	
+
 	/**
-	 * Creation of a Vector from an array of doubles.
-	 * Allows us to use mathematical operations, which
-	 * are implemented in Apache Mahout libraries.
-	 *  
-	 * @return VectorWritable vector
+	 * Mapping of POJO to an Avro record, generated from 
+	 * Avro schema (eventts.avsc)
+	 * 
+	 * @return EventTSRecord
 	 */
-	public VectorWritable getData() {
+	private EventTSRecord createRecord() {
+		// TODO Auto-generated method stub
 		return null;
 	}
+
+	/**
+	 * For tests, we need some random records. So we create those here.
+	 * 
+	 * @param z : number of events in the random record.
+	 * 
+	 * @return
+	 */
+	private EventTSRecord getDefaultRandomRecord(int z) {
+		
+		ArrayList<Event> eventArray = new ArrayList<Event>();
+		for(int i = 0; i < z; i++ ) {
+			Event e = new Event( System.currentTimeMillis() , "URI", Math.random() );
+			eventArray.add(e);
+		}
+		
+		label = "randomRecord " + System.currentTimeMillis();
+		EventTSRecord rec = new EventTSRecord(eventArray, label, tStart, tEnd);
+		
+		return rec;
+	}
+	
+//	public static org.apache.crunch.types.PType getWritablePType() {
+//		 return Writables.derived(
+//			      EventTS.class,
+//			      new MapFn<EventTSWritable, EventTS>() {
+//					private static final long serialVersionUID = 1L;
+//					public EventTS map(EventTSWritable etsw) { return etsw.get(); }
+//			      },
+//			      new MapFn<EventTS, EventTSWritable>() {
+//   				private static final long serialVersionUID = 1L;
+//			        public EventTSWritable map(EventTS ets) { return new EventTSWritable(ets); }
+//			      },
+//			      Writables.writables(EventTSWritable.class));		
+//   }
+
 }
+
+
+
+
+
+
+
+
+
+
 
 
