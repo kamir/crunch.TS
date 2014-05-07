@@ -1,18 +1,8 @@
 package org.apache.crunch.vectors;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.PrintStream;
-import java.io.StringWriter;
 import java.io.UnsupportedEncodingException;
-import java.util.Enumeration;
-import java.util.Properties;
-
 import org.apache.mahout.math.DenseVector;
 import org.apache.mahout.math.NamedVector;
-import org.apache.mahout.math.Vector;
-import org.apache.mahout.math.VectorWritable;
 
 /**
  * The properties Vector uses, e.g. a "JSON-String to carry some Metadata with it".
@@ -132,48 +122,5 @@ public class PropertiesVector extends NamedVector {
 	public String getName() {
 		return (String) propHandler.expandProperties(props);
 	}
-
-    /**
-     * For demo data generation a set of random numbers is multiplied by a factor
-     * 
-     * @param randomData, factor
-     * 
-     * @return rescaled data 
-     */
-    private static double[] rescaleRandomData(double[] randomData, double factor) {
-        double sum = 0.0;
-        for( int i = 0; i < randomData.length; i++ ) { 
-            randomData[i] = randomData[i] * factor;
-            sum = sum + randomData[i];
-        }
-        System.out.println("sum:" + sum + "\tavg:" + sum/(double)randomData.length );
-        return randomData;        
-    }
     
-    private static double[] getRandomData( int z) {
-        double[] d = new double[z];
-        for(int i = 0 ; i < z; i++ ) {
-            d[i] = Math.random();
-        }
-        return d;
-    }
-	
-	public static void main(String[] args) {
-
-		// simulate a measurement of one time series 
-		double[] data = rescaleRandomData( getRandomData((int) Math.pow(2, 3)) , 24.0 );
-        NamedVector nv = new NamedVector(new DenseVector(data), "random data");
-        
-        System.out.println( "> Initial data: " + nv.toString() );
-        System.out.println( );
-        
-        PropertiesVector pv = new PropertiesVector( nv , "name", nv.getName() );
-
-        pv.addProperty("Hey", "You!");
-        pv.addProperty("I like", "Vectors");
-
-        System.out.println( pv.toString() );
-        
-	}
-	
 }

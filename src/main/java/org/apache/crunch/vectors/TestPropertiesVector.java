@@ -1,18 +1,7 @@
 package org.apache.crunch.vectors;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.PrintStream;
-import java.io.StringWriter;
-import java.io.UnsupportedEncodingException;
-import java.util.Enumeration;
-import java.util.Properties;
-
 import org.apache.mahout.math.DenseVector;
 import org.apache.mahout.math.NamedVector;
-import org.apache.mahout.math.Vector;
-import org.apache.mahout.math.VectorWritable;
 
 /**
  * The properties Vector uses, e.g. a HIVE Map, or even a "JSON-String to carry some Metadata with it".
