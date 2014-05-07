@@ -4,6 +4,7 @@ package org.apache.crunchts.simple;
 import org.apache.crunch.DoFn;
 import org.apache.crunch.Emitter;
 import org.apache.crunch.PCollection;
+import org.apache.crunch.PObject;
 import org.apache.crunch.PTable;
 import org.apache.crunch.Pair;
 import org.apache.crunch.PipelineResult;
@@ -43,6 +44,9 @@ public class CombineTimeSeriesPairsAndTriplesFromTSBucket extends CrunchTool {
 			System.exit(-1);
 		}
 
+		AvroFileTarget target1 = new AvroFileTarget( new Path( args[1] + "_combined_pairs_avro" ) );
+		AvroFileTarget target2 = new AvroFileTarget( new Path( args[1] + "_combined_triples_avro" ) );
+		
 		// load the time series from SequenceFiles
 		PTable<Text,org.apache.mahout.math.VectorWritable> tsb = read( 
 				From.sequenceFile(  
@@ -54,13 +58,17 @@ public class CombineTimeSeriesPairsAndTriplesFromTSBucket extends CrunchTool {
 		
 		PCollection<Pair<ContEquidistTS,ContEquidistTS>> combinedP = Cartesian.cross(converted, converted);
 		
-		PCollection<Pair<ContEquidistTS,Pair<ContEquidistTS,ContEquidistTS>>> combinedT = org.apache.crunch.lib.Cartesian.cross(converted, combinedP);
-		
-		AvroFileTarget target1 = new AvroFileTarget( new Path( args[1] + "_combined_pairs_avro" ) );
 		this.write( combinedP, target1);
 		
-		AvroFileTarget target2 = new AvroFileTarget( new Path( args[1] + "_combined_triples_avro" ) );
+		PCollection<Pair<ContEquidistTS,Pair<ContEquidistTS,ContEquidistTS>>> combinedT = org.apache.crunch.lib.Cartesian.cross(converted, combinedP);
+			
 		this.write( combinedT, target2);
+		
+		PObject<Long> zRecordsP = combinedP.length();
+		PObject<Long> zRecordsT = combinedT.length();
+		
+		System.out.println("# of records: " + zRecordsP.getValue()  );
+		System.out.println("# of records: " + zRecordsT.getValue()  );
 		
 		PipelineResult result = done();
 		

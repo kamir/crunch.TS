@@ -4,8 +4,10 @@ package org.apache.crunchts.simple;
 import org.apache.crunch.DoFn;
 import org.apache.crunch.Emitter;
 import org.apache.crunch.PCollection;
+import org.apache.crunch.PObject;
 import org.apache.crunch.PTable;
 import org.apache.crunch.Pair;
+import org.apache.crunch.Pipeline;
 import org.apache.crunch.PipelineResult;
 import org.apache.crunch.io.From;
 import org.apache.crunch.io.avro.AvroFileTarget;
@@ -53,11 +55,17 @@ public class CombineTimeSeriesTriplesFromTSBucket extends CrunchTool {
 		PCollection<ContEquidistTS> converted = covertFromVectorWritables( tsb );
 		
 		PCollection<Pair<ContEquidistTS,ContEquidistTS>> combinedP = Cartesian.cross(converted, converted);
+		combinedP.materialize();
+
+		Pipeline p = combinedP.getPipeline();
 		
 		PCollection<Pair<ContEquidistTS,Pair<ContEquidistTS,ContEquidistTS>>> combinedT = org.apache.crunch.lib.Cartesian.cross(converted, combinedP);
 				
 		AvroFileTarget target2 = new AvroFileTarget( new Path( args[1] + "_combined_triples_avro" ) );
-		this.write( combinedT, target2);
+		p.write( combinedT, target2);
+
+		PObject<Long> zRecordsT = combinedT.length();
+		System.out.println("# of records: " + zRecordsT.getValue()  );
 		
 		PipelineResult result = done();
 		

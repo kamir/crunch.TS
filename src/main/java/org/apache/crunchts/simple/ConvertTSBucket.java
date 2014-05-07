@@ -49,12 +49,12 @@ public class ConvertTSBucket extends CrunchTool {
 		/**
 		 *  Interesting: here we trigger two different MR-Jobs.
 		 */
-		PObject<Double> max = hitCounts.max();
-		PObject<Double> min = hitCounts.min();
+//		PObject<Double> max = hitCounts.max();
+//		PObject<Double> min = hitCounts.min();
 		
 		System.out.println( "# of records: " + zRecords.getValue() );
-		System.out.println( "min count   : " + min.getValue() );
-		System.out.println( "max count   : " + max.getValue() );
+//		System.out.println( "min count   : " + min.getValue() );
+//		System.out.println( "max count   : " + max.getValue() );
 
 		AvroFileTarget target = new AvroFileTarget( new Path( args[1] ) );
 		this.write( converted, target);

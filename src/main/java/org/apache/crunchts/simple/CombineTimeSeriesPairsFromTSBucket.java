@@ -62,6 +62,8 @@ public class CombineTimeSeriesPairsFromTSBucket extends CrunchTool {
 		AvroFileTarget target1 = new AvroFileTarget( new Path( args[1] + "_combined_pairs_avro" ) );
 		this.write( combinedP, target1);
 		
+		System.out.println("# of records: " + zRecords.getValue()  );
+		
 		return result.succeeded() ? 0 : 1;		
 	}
 

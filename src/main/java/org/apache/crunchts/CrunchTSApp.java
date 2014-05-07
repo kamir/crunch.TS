@@ -22,7 +22,9 @@ import java.util.List;
 
 import javax.security.auth.login.LoginException;
 
+import org.apache.crunchts.simple.CombineTimeSeriesPairsAndTriplesFromTSBucket;
 import org.apache.crunchts.simple.CombineTimeSeriesPairsFromTSBucket;
+import org.apache.crunchts.simple.CombineTimeSeriesTriplesFromTSBucket;
 import org.apache.crunchts.simple.ConvertTSBucket;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hdfs.DistributedFileSystem;
@@ -306,6 +308,8 @@ public class CrunchTSApp extends FsShell {
 				pairs(argv);
 			} else if ("-triples".equals(cmd)) {
 				triples(argv);
+			} else if ("-pairsandtriples".equals(cmd)) {
+			    pairsAndTriples(argv);
 			} else if ("-help".equals(cmd)) {
 				if (i < argv.length) {
 					printHelp(argv[i]);
@@ -343,8 +347,33 @@ public class CrunchTSApp extends FsShell {
 		return exitCode;
 	}
 
+	private void pairsAndTriples(String[] argv) {
+		System.out.println("PAIRS and TRIPLES");
+		try {
+			String[] arguments = new String[2];
+			arguments[0] = argv[1];
+			arguments[1] = argv[2];
+			int exitCode = ToolRunner.run(new Configuration(), new CombineTimeSeriesPairsAndTriplesFromTSBucket(), arguments);
+		} 
+		catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
 	private void triples(String[] argv) {
-		System.out.println("TRIPLES are already created in the PAIRS function.");
+		System.out.println("TRIPLES");
+		try {
+			String[] arguments = new String[2];
+			arguments[0] = argv[1];
+			arguments[1] = argv[2];
+			int exitCode = ToolRunner.run(new Configuration(), new CombineTimeSeriesTriplesFromTSBucket(), arguments);
+		} 
+		catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	private void pairs(String[] argv) {
