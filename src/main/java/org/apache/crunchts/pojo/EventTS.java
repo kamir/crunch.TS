@@ -1,15 +1,12 @@
 package org.apache.crunchts.pojo;
 
-import java.util.ArrayList;
-import java.util.Hashtable;
-import java.util.Date;
-import java.awt.List;
 import java.net.URI;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Hashtable;
 
-import org.apache.crunch.MapFn;
-import org.apache.crunch.types.writable.Writables;
-import org.apache.crunchts.types.EventTSRecord;
 import org.apache.crunchts.types.Event;
+import org.apache.crunchts.types.EventTSRecord;
 
 public class EventTS extends AbstractTS {
 	
