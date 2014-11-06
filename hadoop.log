@@ -1,0 +1,1028 @@
+2014-11-05 04:05:59,810 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2014-11-05 04:06:48,696 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2014-11-05 04:06:50,138 INFO org.apache.crunch.io.impl.FileTargetImpl: Will write output files to new path: out
+2014-11-05 04:06:50,165 WARN org.apache.hadoop.conf.Configuration: mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2014-11-05 04:06:50,780 WARN org.apache.hadoop.conf.Configuration: session.id is deprecated. Instead, use dfs.metrics.session-id
+2014-11-05 04:06:50,781 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2014-11-05 04:06:51,045 WARN org.apache.hadoop.mapreduce.JobSubmitter: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2014-11-05 04:06:51,370 WARN org.apache.hadoop.conf.Configuration: dfs.block.size is deprecated. Instead, use dfs.blocksize
+2014-11-05 04:06:51,373 INFO org.apache.hadoop.mapreduce.JobSubmitter: Cleaning up the staging area file:/tmp/hadoop-training/mapred/staging/training843101414/.staging/job_local843101414_0001
+2014-11-05 04:06:51,405 ERROR org.apache.hadoop.security.UserGroupInformation: PriviledgedActionException as:training (auth:SIMPLE) cause:org.apache.hadoop.mapreduce.lib.input.InvalidInputException: Input path does not exist: file:/home/training/workspace2/crunchTS/in
+2014-11-05 04:06:51,406 INFO org.apache.crunch.hadoop.mapreduce.lib.jobcontrol.CrunchControlledJob: Error occurred starting job "de.bitocean.crunchts.simple.ImportClickCountData: Text(in)+S0+Avro(out) (1/1)":
+2014-11-05 04:06:51,406 INFO org.apache.crunch.hadoop.mapreduce.lib.jobcontrol.CrunchControlledJob: org.apache.hadoop.mapreduce.lib.input.InvalidInputException: Input path does not exist: file:/home/training/workspace2/crunchTS/in
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.listStatus(FileInputFormat.java:243)
+	at org.apache.hadoop.mapreduce.lib.input.CombineFileInputFormat.getSplits(CombineFileInputFormat.java:206)
+	at org.apache.crunch.impl.mr.run.CrunchInputFormat.getSplits(CrunchInputFormat.java:65)
+	at org.apache.hadoop.mapreduce.JobSubmitter.writeNewSplits(JobSubmitter.java:468)
+	at org.apache.hadoop.mapreduce.JobSubmitter.writeSplits(JobSubmitter.java:485)
+	at org.apache.hadoop.mapreduce.JobSubmitter.submitJobInternal(JobSubmitter.java:369)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1269)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1266)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1408)
+	at org.apache.hadoop.mapreduce.Job.submit(Job.java:1266)
+	at org.apache.crunch.hadoop.mapreduce.lib.jobcontrol.CrunchControlledJob.submit(CrunchControlledJob.java:307)
+	at org.apache.crunch.hadoop.mapreduce.lib.jobcontrol.CrunchJobControl.startReadyJobs(CrunchJobControl.java:201)
+	at org.apache.crunch.hadoop.mapreduce.lib.jobcontrol.CrunchJobControl.pollJobStatusAndStartNewOnes(CrunchJobControl.java:231)
+	at org.apache.crunch.impl.mr.exec.MRExecutor.monitorLoop(MRExecutor.java:112)
+	at org.apache.crunch.impl.mr.exec.MRExecutor.access$000(MRExecutor.java:55)
+	at org.apache.crunch.impl.mr.exec.MRExecutor$1.run(MRExecutor.java:83)
+	at java.lang.Thread.run(Thread.java:662)
+
+2014-11-05 04:14:02,481 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2014-11-05 04:14:03,718 INFO org.apache.crunch.io.impl.FileTargetImpl: Will write output files to new path: out_1415189643713
+2014-11-05 04:14:03,754 WARN org.apache.hadoop.conf.Configuration: mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2014-11-05 04:14:04,398 WARN org.apache.hadoop.conf.Configuration: session.id is deprecated. Instead, use dfs.metrics.session-id
+2014-11-05 04:14:04,410 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2014-11-05 04:14:04,572 WARN org.apache.hadoop.mapreduce.JobSubmitter: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2014-11-05 04:14:04,662 WARN org.apache.hadoop.conf.Configuration: dfs.block.size is deprecated. Instead, use dfs.blocksize
+2014-11-05 04:14:04,668 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 4
+2014-11-05 04:14:04,788 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:4
+2014-11-05 04:14:04,845 WARN org.apache.hadoop.conf.Configuration: mapred.cache.files is deprecated. Instead, use mapreduce.job.cache.files
+2014-11-05 04:14:04,845 WARN org.apache.hadoop.conf.Configuration: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+2014-11-05 04:14:04,845 WARN org.apache.hadoop.conf.Configuration: mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2014-11-05 04:14:04,845 WARN org.apache.hadoop.conf.Configuration: mapreduce.map.class is deprecated. Instead, use mapreduce.job.map.class
+2014-11-05 04:14:04,845 WARN org.apache.hadoop.conf.Configuration: mapred.job.name is deprecated. Instead, use mapreduce.job.name
+2014-11-05 04:14:04,845 WARN org.apache.hadoop.conf.Configuration: mapreduce.inputformat.class is deprecated. Instead, use mapreduce.job.inputformat.class
+2014-11-05 04:14:04,845 WARN org.apache.hadoop.conf.Configuration: mapred.output.dir is deprecated. Instead, use mapreduce.output.fileoutputformat.outputdir
+2014-11-05 04:14:04,845 WARN org.apache.hadoop.conf.Configuration: mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
+2014-11-05 04:14:04,846 WARN org.apache.hadoop.conf.Configuration: mapred.cache.files.timestamps is deprecated. Instead, use mapreduce.job.cache.files.timestamps
+2014-11-05 04:14:04,846 WARN org.apache.hadoop.conf.Configuration: mapred.working.dir is deprecated. Instead, use mapreduce.job.working.dir
+2014-11-05 04:14:05,138 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local1375244809_0001
+2014-11-05 04:14:05,937 INFO org.apache.hadoop.mapred.LocalDistributedCacheManager: Creating symlink: /tmp/hadoop-training/mapred/local/-543266393841895735/MAP <- /home/training/workspace2/crunchTS/MAP
+2014-11-05 04:14:05,949 INFO org.apache.hadoop.mapred.LocalDistributedCacheManager: Localized file:/tmp/crunch-1749146713/p1/MAP as file:/tmp/hadoop-training/mapred/local/-543266393841895735/MAP
+2014-11-05 04:14:05,952 WARN org.apache.hadoop.conf.Configuration: mapred.cache.localFiles is deprecated. Instead, use mapreduce.job.cache.local.files
+2014-11-05 04:14:06,095 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2014-11-05 04:14:06,096 INFO org.apache.crunch.hadoop.mapreduce.lib.jobcontrol.CrunchControlledJob: Running job "de.bitocean.crunchts.simple.ImportClickCountData: Text(in)+S0+Avro(out_1415189643713) (1/1)"
+2014-11-05 04:14:06,096 INFO org.apache.crunch.hadoop.mapreduce.lib.jobcontrol.CrunchControlledJob: Job status available at: http://localhost:8080/
+2014-11-05 04:14:06,097 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2014-11-05 04:14:06,118 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2014-11-05 04:14:06,137 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2014-11-05 04:14:06,138 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1375244809_0001_m_000000_0
+2014-11-05 04:14:06,346 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 04:14:06,353 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-000000.gz:0+87052866)
+2014-11-05 04:14:06,411 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 04:14:08,986 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1375244809_0001_m_000001_0
+2014-11-05 04:14:08,988 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 04:14:08,988 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-030000.gz:0+85980815)
+2014-11-05 04:14:08,995 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 04:14:10,075 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1375244809_0001_m_000002_0
+2014-11-05 04:14:10,077 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 04:14:10,078 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-020000.gz:0+83397233)
+2014-11-05 04:14:10,082 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 04:14:11,438 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1375244809_0001_m_000003_0
+2014-11-05 04:14:11,440 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 04:14:11,440 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-010000.gz:0+78524252)
+2014-11-05 04:14:11,478 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 04:14:12,272 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:14:12,575 INFO org.apache.hadoop.mapred.LocalJobRunner: Map task executor complete.
+2014-11-05 04:14:12,577 WARN org.apache.hadoop.mapred.LocalJobRunner: job_local1375244809_0001
+java.lang.Exception: java.lang.NumberFormatException: For input string: "7534882959"
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:401)
+Caused by: java.lang.NumberFormatException: For input string: "7534882959"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:48)
+	at java.lang.Integer.parseInt(Integer.java:461)
+	at java.lang.Integer.parseInt(Integer.java:499)
+	at de.bitocean.crunchts.simple.ImportClickCountData$1.process(ImportClickCountData.java:72)
+	at de.bitocean.crunchts.simple.ImportClickCountData$1.process(ImportClickCountData.java:1)
+	at org.apache.crunch.impl.mr.run.RTNode.process(RTNode.java:99)
+	at org.apache.crunch.impl.mr.emit.IntermediateEmitter.emit(IntermediateEmitter.java:56)
+	at org.apache.crunch.MapFn.process(MapFn.java:34)
+	at org.apache.crunch.impl.mr.run.RTNode.process(RTNode.java:99)
+	at org.apache.crunch.impl.mr.run.RTNode.process(RTNode.java:110)
+	at org.apache.crunch.impl.mr.run.CrunchMapper.map(CrunchMapper.java:60)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:144)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:756)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:338)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:233)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+2014-11-05 04:15:36,942 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2014-11-05 04:15:37,746 INFO org.apache.crunch.io.impl.FileTargetImpl: Will write output files to new path: out_1415189737737
+2014-11-05 04:15:37,792 WARN org.apache.hadoop.conf.Configuration: mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2014-11-05 04:15:38,080 WARN org.apache.hadoop.conf.Configuration: session.id is deprecated. Instead, use dfs.metrics.session-id
+2014-11-05 04:15:38,083 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2014-11-05 04:15:38,130 WARN org.apache.hadoop.mapreduce.JobSubmitter: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2014-11-05 04:15:38,193 WARN org.apache.hadoop.conf.Configuration: dfs.block.size is deprecated. Instead, use dfs.blocksize
+2014-11-05 04:15:38,205 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 4
+2014-11-05 04:15:38,295 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:4
+2014-11-05 04:15:38,328 WARN org.apache.hadoop.conf.Configuration: mapred.cache.files is deprecated. Instead, use mapreduce.job.cache.files
+2014-11-05 04:15:38,329 WARN org.apache.hadoop.conf.Configuration: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+2014-11-05 04:15:38,329 WARN org.apache.hadoop.conf.Configuration: mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2014-11-05 04:15:38,329 WARN org.apache.hadoop.conf.Configuration: mapreduce.map.class is deprecated. Instead, use mapreduce.job.map.class
+2014-11-05 04:15:38,329 WARN org.apache.hadoop.conf.Configuration: mapred.job.name is deprecated. Instead, use mapreduce.job.name
+2014-11-05 04:15:38,329 WARN org.apache.hadoop.conf.Configuration: mapreduce.inputformat.class is deprecated. Instead, use mapreduce.job.inputformat.class
+2014-11-05 04:15:38,330 WARN org.apache.hadoop.conf.Configuration: mapred.output.dir is deprecated. Instead, use mapreduce.output.fileoutputformat.outputdir
+2014-11-05 04:15:38,330 WARN org.apache.hadoop.conf.Configuration: mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
+2014-11-05 04:15:38,330 WARN org.apache.hadoop.conf.Configuration: mapred.cache.files.timestamps is deprecated. Instead, use mapreduce.job.cache.files.timestamps
+2014-11-05 04:15:38,330 WARN org.apache.hadoop.conf.Configuration: mapred.working.dir is deprecated. Instead, use mapreduce.job.working.dir
+2014-11-05 04:15:38,482 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local357312515_0001
+2014-11-05 04:15:38,973 INFO org.apache.hadoop.mapred.LocalDistributedCacheManager: Creating symlink: /tmp/hadoop-training/mapred/local/3026774872674899367/MAP <- /home/training/workspace2/crunchTS/MAP
+2014-11-05 04:15:38,974 INFO org.apache.hadoop.mapred.LocalDistributedCacheManager: Localized file:/tmp/crunch-785689281/p1/MAP as file:/tmp/hadoop-training/mapred/local/3026774872674899367/MAP
+2014-11-05 04:15:38,978 WARN org.apache.hadoop.conf.Configuration: mapred.cache.localFiles is deprecated. Instead, use mapreduce.job.cache.local.files
+2014-11-05 04:15:39,091 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2014-11-05 04:15:39,091 INFO org.apache.crunch.hadoop.mapreduce.lib.jobcontrol.CrunchControlledJob: Running job "de.bitocean.crunchts.simple.ImportClickCountData: Text(in)+S0+Avro(out_1415189737737) (1/1)"
+2014-11-05 04:15:39,091 INFO org.apache.crunch.hadoop.mapreduce.lib.jobcontrol.CrunchControlledJob: Job status available at: http://localhost:8080/
+2014-11-05 04:15:39,092 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2014-11-05 04:15:39,100 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2014-11-05 04:15:39,114 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2014-11-05 04:15:39,115 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local357312515_0001_m_000000_0
+2014-11-05 04:15:39,183 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 04:15:39,185 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-000000.gz:0+87052866)
+2014-11-05 04:15:39,211 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 04:15:39,222 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local357312515_0001_m_000001_0
+2014-11-05 04:15:39,226 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 04:15:39,227 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-030000.gz:0+85980815)
+2014-11-05 04:15:39,234 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 04:15:39,236 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local357312515_0001_m_000002_0
+2014-11-05 04:15:39,241 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 04:15:39,241 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-020000.gz:0+83397233)
+2014-11-05 04:15:39,249 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 04:15:39,253 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local357312515_0001_m_000003_0
+2014-11-05 04:15:39,257 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 04:15:39,258 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-010000.gz:0+78524252)
+2014-11-05 04:15:39,266 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 04:15:39,269 INFO org.apache.hadoop.mapred.LocalJobRunner: Map task executor complete.
+2014-11-05 04:15:39,270 WARN org.apache.hadoop.mapred.LocalJobRunner: job_local357312515_0001
+java.lang.Exception: java.lang.Error: Unresolved compilation problem: 
+	The method setVolume(Integer) in the type ClickCount is not applicable for the arguments (long)
+
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:401)
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	The method setVolume(Integer) in the type ClickCount is not applicable for the arguments (long)
+
+	at de.bitocean.crunchts.simple.ImportClickCountData$1.process(ImportClickCountData.java:72)
+	at de.bitocean.crunchts.simple.ImportClickCountData$1.process(ImportClickCountData.java:1)
+	at org.apache.crunch.impl.mr.run.RTNode.process(RTNode.java:99)
+	at org.apache.crunch.impl.mr.emit.IntermediateEmitter.emit(IntermediateEmitter.java:56)
+	at org.apache.crunch.MapFn.process(MapFn.java:34)
+	at org.apache.crunch.impl.mr.run.RTNode.process(RTNode.java:99)
+	at org.apache.crunch.impl.mr.run.RTNode.process(RTNode.java:110)
+	at org.apache.crunch.impl.mr.run.CrunchMapper.map(CrunchMapper.java:60)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:144)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:756)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:338)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:233)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+2014-11-05 04:16:56,572 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2014-11-05 04:16:57,468 INFO org.apache.crunch.io.impl.FileTargetImpl: Will write output files to new path: out_1415189817461
+2014-11-05 04:16:57,506 WARN org.apache.hadoop.conf.Configuration: mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2014-11-05 04:16:57,830 WARN org.apache.hadoop.conf.Configuration: session.id is deprecated. Instead, use dfs.metrics.session-id
+2014-11-05 04:16:57,838 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2014-11-05 04:16:57,929 WARN org.apache.hadoop.mapreduce.JobSubmitter: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2014-11-05 04:16:58,027 WARN org.apache.hadoop.conf.Configuration: dfs.block.size is deprecated. Instead, use dfs.blocksize
+2014-11-05 04:16:58,036 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 4
+2014-11-05 04:16:58,125 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:4
+2014-11-05 04:16:58,152 WARN org.apache.hadoop.conf.Configuration: mapred.cache.files is deprecated. Instead, use mapreduce.job.cache.files
+2014-11-05 04:16:58,152 WARN org.apache.hadoop.conf.Configuration: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+2014-11-05 04:16:58,153 WARN org.apache.hadoop.conf.Configuration: mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2014-11-05 04:16:58,153 WARN org.apache.hadoop.conf.Configuration: mapreduce.map.class is deprecated. Instead, use mapreduce.job.map.class
+2014-11-05 04:16:58,153 WARN org.apache.hadoop.conf.Configuration: mapred.job.name is deprecated. Instead, use mapreduce.job.name
+2014-11-05 04:16:58,153 WARN org.apache.hadoop.conf.Configuration: mapreduce.inputformat.class is deprecated. Instead, use mapreduce.job.inputformat.class
+2014-11-05 04:16:58,153 WARN org.apache.hadoop.conf.Configuration: mapred.output.dir is deprecated. Instead, use mapreduce.output.fileoutputformat.outputdir
+2014-11-05 04:16:58,153 WARN org.apache.hadoop.conf.Configuration: mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
+2014-11-05 04:16:58,154 WARN org.apache.hadoop.conf.Configuration: mapred.cache.files.timestamps is deprecated. Instead, use mapreduce.job.cache.files.timestamps
+2014-11-05 04:16:58,154 WARN org.apache.hadoop.conf.Configuration: mapred.working.dir is deprecated. Instead, use mapreduce.job.working.dir
+2014-11-05 04:16:58,296 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local919088703_0001
+2014-11-05 04:16:58,668 INFO org.apache.hadoop.mapred.LocalDistributedCacheManager: Creating symlink: /tmp/hadoop-training/mapred/local/-5342434797031447385/MAP <- /home/training/workspace2/crunchTS/MAP
+2014-11-05 04:16:58,672 INFO org.apache.hadoop.mapred.LocalDistributedCacheManager: Localized file:/tmp/crunch-607519358/p1/MAP as file:/tmp/hadoop-training/mapred/local/-5342434797031447385/MAP
+2014-11-05 04:16:58,676 WARN org.apache.hadoop.conf.Configuration: mapred.cache.localFiles is deprecated. Instead, use mapreduce.job.cache.local.files
+2014-11-05 04:16:58,777 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2014-11-05 04:16:58,778 INFO org.apache.crunch.hadoop.mapreduce.lib.jobcontrol.CrunchControlledJob: Running job "de.bitocean.crunchts.simple.ImportClickCountData: Text(in)+S0+Avro(out_1415189817461) (1/1)"
+2014-11-05 04:16:58,779 INFO org.apache.crunch.hadoop.mapreduce.lib.jobcontrol.CrunchControlledJob: Job status available at: http://localhost:8080/
+2014-11-05 04:16:58,780 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2014-11-05 04:16:58,788 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2014-11-05 04:16:58,803 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2014-11-05 04:16:58,804 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local919088703_0001_m_000000_0
+2014-11-05 04:16:58,890 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 04:16:58,893 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-000000.gz:0+87052866)
+2014-11-05 04:16:58,913 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 04:17:04,864 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:17:07,866 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:17:11,328 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:17:14,851 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:17:17,851 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:17:19,222 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:17:19,222 INFO org.apache.hadoop.mapred.Task: Task:attempt_local919088703_0001_m_000000_0 is done. And is in the process of committing
+2014-11-05 04:17:19,223 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:17:19,223 INFO org.apache.hadoop.mapred.Task: Task attempt_local919088703_0001_m_000000_0 is allowed to commit now
+2014-11-05 04:17:19,223 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Saved output of task 'attempt_local919088703_0001_m_000000_0' to file:/tmp/crunch-607519358/p1/output/_temporary/0/task_local919088703_0001_m_000000
+2014-11-05 04:17:19,223 INFO org.apache.hadoop.mapred.LocalJobRunner: map
+2014-11-05 04:17:19,223 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local919088703_0001_m_000000_0' done.
+2014-11-05 04:17:19,224 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local919088703_0001_m_000000_0
+2014-11-05 04:17:19,224 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local919088703_0001_m_000001_0
+2014-11-05 04:17:19,225 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 04:17:19,227 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-030000.gz:0+85980815)
+2014-11-05 04:17:19,260 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 04:17:25,235 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:17:28,568 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:17:31,577 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:17:34,583 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:17:37,586 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:17:40,681 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:17:43,196 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:17:43,197 INFO org.apache.hadoop.mapred.Task: Task:attempt_local919088703_0001_m_000001_0 is done. And is in the process of committing
+2014-11-05 04:17:43,197 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:17:43,197 INFO org.apache.hadoop.mapred.Task: Task attempt_local919088703_0001_m_000001_0 is allowed to commit now
+2014-11-05 04:17:43,198 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Saved output of task 'attempt_local919088703_0001_m_000001_0' to file:/tmp/crunch-607519358/p1/output/_temporary/0/task_local919088703_0001_m_000001
+2014-11-05 04:17:43,198 INFO org.apache.hadoop.mapred.LocalJobRunner: map
+2014-11-05 04:17:43,198 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local919088703_0001_m_000001_0' done.
+2014-11-05 04:17:43,198 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local919088703_0001_m_000001_0
+2014-11-05 04:17:43,198 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local919088703_0001_m_000002_0
+2014-11-05 04:17:43,199 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 04:17:43,199 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-020000.gz:0+83397233)
+2014-11-05 04:17:43,244 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 04:17:49,204 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:17:52,226 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:17:55,227 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:17:58,228 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:17:59,496 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:17:59,497 INFO org.apache.hadoop.mapred.Task: Task:attempt_local919088703_0001_m_000002_0 is done. And is in the process of committing
+2014-11-05 04:17:59,497 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:17:59,497 INFO org.apache.hadoop.mapred.Task: Task attempt_local919088703_0001_m_000002_0 is allowed to commit now
+2014-11-05 04:17:59,498 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Saved output of task 'attempt_local919088703_0001_m_000002_0' to file:/tmp/crunch-607519358/p1/output/_temporary/0/task_local919088703_0001_m_000002
+2014-11-05 04:17:59,498 INFO org.apache.hadoop.mapred.LocalJobRunner: map
+2014-11-05 04:17:59,498 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local919088703_0001_m_000002_0' done.
+2014-11-05 04:17:59,498 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local919088703_0001_m_000002_0
+2014-11-05 04:17:59,498 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local919088703_0001_m_000003_0
+2014-11-05 04:17:59,499 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 04:17:59,500 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-010000.gz:0+78524252)
+2014-11-05 04:17:59,533 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 04:18:06,555 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:18:09,556 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:18:12,558 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:18:15,926 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:18:17,196 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:18:17,196 INFO org.apache.hadoop.mapred.Task: Task:attempt_local919088703_0001_m_000003_0 is done. And is in the process of committing
+2014-11-05 04:18:17,196 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:18:17,197 INFO org.apache.hadoop.mapred.Task: Task attempt_local919088703_0001_m_000003_0 is allowed to commit now
+2014-11-05 04:18:17,197 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Saved output of task 'attempt_local919088703_0001_m_000003_0' to file:/tmp/crunch-607519358/p1/output/_temporary/0/task_local919088703_0001_m_000003
+2014-11-05 04:18:17,197 INFO org.apache.hadoop.mapred.LocalJobRunner: map
+2014-11-05 04:18:17,198 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local919088703_0001_m_000003_0' done.
+2014-11-05 04:18:17,198 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local919088703_0001_m_000003_0
+2014-11-05 04:18:17,198 INFO org.apache.hadoop.mapred.LocalJobRunner: Map task executor complete.
+2014-11-05 04:21:39,263 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2014-11-05 04:21:40,139 INFO org.apache.crunch.io.impl.FileTargetImpl: Will write output files to new path: out_1415190099747
+2014-11-05 04:21:40,176 WARN org.apache.hadoop.conf.Configuration: mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2014-11-05 04:21:40,466 WARN org.apache.hadoop.conf.Configuration: session.id is deprecated. Instead, use dfs.metrics.session-id
+2014-11-05 04:21:40,467 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2014-11-05 04:21:40,608 WARN org.apache.hadoop.mapreduce.JobSubmitter: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2014-11-05 04:21:40,727 WARN org.apache.hadoop.conf.Configuration: dfs.block.size is deprecated. Instead, use dfs.blocksize
+2014-11-05 04:21:40,735 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 4
+2014-11-05 04:21:40,825 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:4
+2014-11-05 04:21:40,866 WARN org.apache.hadoop.conf.Configuration: mapred.cache.files is deprecated. Instead, use mapreduce.job.cache.files
+2014-11-05 04:21:40,867 WARN org.apache.hadoop.conf.Configuration: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+2014-11-05 04:21:40,867 WARN org.apache.hadoop.conf.Configuration: mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2014-11-05 04:21:40,867 WARN org.apache.hadoop.conf.Configuration: mapreduce.map.class is deprecated. Instead, use mapreduce.job.map.class
+2014-11-05 04:21:40,867 WARN org.apache.hadoop.conf.Configuration: mapred.job.name is deprecated. Instead, use mapreduce.job.name
+2014-11-05 04:21:40,867 WARN org.apache.hadoop.conf.Configuration: mapreduce.inputformat.class is deprecated. Instead, use mapreduce.job.inputformat.class
+2014-11-05 04:21:40,868 WARN org.apache.hadoop.conf.Configuration: mapred.output.dir is deprecated. Instead, use mapreduce.output.fileoutputformat.outputdir
+2014-11-05 04:21:40,868 WARN org.apache.hadoop.conf.Configuration: mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
+2014-11-05 04:21:40,868 WARN org.apache.hadoop.conf.Configuration: mapred.cache.files.timestamps is deprecated. Instead, use mapreduce.job.cache.files.timestamps
+2014-11-05 04:21:40,868 WARN org.apache.hadoop.conf.Configuration: mapred.working.dir is deprecated. Instead, use mapreduce.job.working.dir
+2014-11-05 04:21:41,005 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local1962943538_0001
+2014-11-05 04:21:41,500 INFO org.apache.hadoop.mapred.LocalDistributedCacheManager: Creating symlink: /tmp/hadoop-training/mapred/local/3494496034175516231/MAP <- /home/training/workspace2/crunchTS/MAP
+2014-11-05 04:21:41,514 INFO org.apache.hadoop.mapred.LocalDistributedCacheManager: Localized file:/tmp/crunch-1125304638/p1/MAP as file:/tmp/hadoop-training/mapred/local/3494496034175516231/MAP
+2014-11-05 04:21:41,523 WARN org.apache.hadoop.conf.Configuration: mapred.cache.localFiles is deprecated. Instead, use mapreduce.job.cache.local.files
+2014-11-05 04:21:41,658 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2014-11-05 04:21:41,658 INFO org.apache.crunch.hadoop.mapreduce.lib.jobcontrol.CrunchControlledJob: Running job "de.bitocean.crunchts.simple.ImportClickCountData: Text(in)+S0+Avro(out_1415190099747) (1/1)"
+2014-11-05 04:21:41,658 INFO org.apache.crunch.hadoop.mapreduce.lib.jobcontrol.CrunchControlledJob: Job status available at: http://localhost:8080/
+2014-11-05 04:21:41,661 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2014-11-05 04:21:41,672 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2014-11-05 04:21:41,688 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2014-11-05 04:21:41,688 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1962943538_0001_m_000000_0
+2014-11-05 04:21:41,773 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 04:21:41,778 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-000000.gz:0+87052866)
+2014-11-05 04:21:41,811 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 04:21:47,735 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:21:50,737 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:21:53,753 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:21:56,766 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:21:59,768 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:22:00,163 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:22:00,163 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1962943538_0001_m_000000_0 is done. And is in the process of committing
+2014-11-05 04:22:00,164 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:22:00,164 INFO org.apache.hadoop.mapred.Task: Task attempt_local1962943538_0001_m_000000_0 is allowed to commit now
+2014-11-05 04:22:00,164 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Saved output of task 'attempt_local1962943538_0001_m_000000_0' to file:/tmp/crunch-1125304638/p1/output/_temporary/0/task_local1962943538_0001_m_000000
+2014-11-05 04:22:00,165 INFO org.apache.hadoop.mapred.LocalJobRunner: map
+2014-11-05 04:22:00,165 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1962943538_0001_m_000000_0' done.
+2014-11-05 04:22:00,165 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1962943538_0001_m_000000_0
+2014-11-05 04:22:00,165 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1962943538_0001_m_000001_0
+2014-11-05 04:22:00,166 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 04:22:00,168 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-030000.gz:0+85980815)
+2014-11-05 04:22:00,221 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 04:22:06,339 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:22:09,340 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:22:12,341 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:22:15,341 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:22:18,342 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:22:19,981 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:22:19,981 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1962943538_0001_m_000001_0 is done. And is in the process of committing
+2014-11-05 04:22:19,982 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:22:19,982 INFO org.apache.hadoop.mapred.Task: Task attempt_local1962943538_0001_m_000001_0 is allowed to commit now
+2014-11-05 04:22:19,982 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Saved output of task 'attempt_local1962943538_0001_m_000001_0' to file:/tmp/crunch-1125304638/p1/output/_temporary/0/task_local1962943538_0001_m_000001
+2014-11-05 04:22:19,982 INFO org.apache.hadoop.mapred.LocalJobRunner: map
+2014-11-05 04:22:19,983 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1962943538_0001_m_000001_0' done.
+2014-11-05 04:22:19,983 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1962943538_0001_m_000001_0
+2014-11-05 04:22:19,983 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1962943538_0001_m_000002_0
+2014-11-05 04:22:19,984 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 04:22:19,984 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-020000.gz:0+83397233)
+2014-11-05 04:22:20,017 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 04:22:25,987 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:22:33,555 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:22:36,555 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:22:39,572 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:22:42,910 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:22:44,852 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:22:44,853 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1962943538_0001_m_000002_0 is done. And is in the process of committing
+2014-11-05 04:22:44,853 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:22:44,853 INFO org.apache.hadoop.mapred.Task: Task attempt_local1962943538_0001_m_000002_0 is allowed to commit now
+2014-11-05 04:22:44,854 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Saved output of task 'attempt_local1962943538_0001_m_000002_0' to file:/tmp/crunch-1125304638/p1/output/_temporary/0/task_local1962943538_0001_m_000002
+2014-11-05 04:22:44,854 INFO org.apache.hadoop.mapred.LocalJobRunner: map
+2014-11-05 04:22:44,854 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1962943538_0001_m_000002_0' done.
+2014-11-05 04:22:44,854 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1962943538_0001_m_000002_0
+2014-11-05 04:22:44,854 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1962943538_0001_m_000003_0
+2014-11-05 04:22:44,855 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 04:22:44,856 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-010000.gz:0+78524252)
+2014-11-05 04:22:44,869 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 04:22:50,860 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:22:53,861 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:22:56,861 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:23:01,914 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:23:02,464 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:23:02,464 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1962943538_0001_m_000003_0 is done. And is in the process of committing
+2014-11-05 04:23:02,465 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:23:02,465 INFO org.apache.hadoop.mapred.Task: Task attempt_local1962943538_0001_m_000003_0 is allowed to commit now
+2014-11-05 04:23:02,465 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Saved output of task 'attempt_local1962943538_0001_m_000003_0' to file:/tmp/crunch-1125304638/p1/output/_temporary/0/task_local1962943538_0001_m_000003
+2014-11-05 04:23:02,466 INFO org.apache.hadoop.mapred.LocalJobRunner: map
+2014-11-05 04:23:02,466 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1962943538_0001_m_000003_0' done.
+2014-11-05 04:23:02,466 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1962943538_0001_m_000003_0
+2014-11-05 04:23:02,466 INFO org.apache.hadoop.mapred.LocalJobRunner: Map task executor complete.
+2014-11-05 04:50:04,746 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2014-11-05 04:50:05,880 INFO org.apache.crunch.io.impl.FileTargetImpl: Will write output files to new path: out_1415191805435
+2014-11-05 04:50:05,916 WARN org.apache.hadoop.conf.Configuration: mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2014-11-05 04:50:06,192 WARN org.apache.hadoop.conf.Configuration: session.id is deprecated. Instead, use dfs.metrics.session-id
+2014-11-05 04:50:06,197 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2014-11-05 04:50:06,527 WARN org.apache.hadoop.mapreduce.JobSubmitter: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2014-11-05 04:50:08,734 WARN org.apache.hadoop.conf.Configuration: dfs.block.size is deprecated. Instead, use dfs.blocksize
+2014-11-05 04:50:08,741 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 4
+2014-11-05 04:50:08,808 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:4
+2014-11-05 04:50:08,822 WARN org.apache.hadoop.conf.Configuration: mapred.cache.files is deprecated. Instead, use mapreduce.job.cache.files
+2014-11-05 04:50:08,822 WARN org.apache.hadoop.conf.Configuration: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+2014-11-05 04:50:08,822 WARN org.apache.hadoop.conf.Configuration: mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2014-11-05 04:50:08,822 WARN org.apache.hadoop.conf.Configuration: mapreduce.map.class is deprecated. Instead, use mapreduce.job.map.class
+2014-11-05 04:50:08,822 WARN org.apache.hadoop.conf.Configuration: mapred.job.name is deprecated. Instead, use mapreduce.job.name
+2014-11-05 04:50:08,822 WARN org.apache.hadoop.conf.Configuration: mapreduce.inputformat.class is deprecated. Instead, use mapreduce.job.inputformat.class
+2014-11-05 04:50:08,822 WARN org.apache.hadoop.conf.Configuration: mapred.output.dir is deprecated. Instead, use mapreduce.output.fileoutputformat.outputdir
+2014-11-05 04:50:08,823 WARN org.apache.hadoop.conf.Configuration: mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
+2014-11-05 04:50:08,823 WARN org.apache.hadoop.conf.Configuration: mapred.cache.files.timestamps is deprecated. Instead, use mapreduce.job.cache.files.timestamps
+2014-11-05 04:50:08,823 WARN org.apache.hadoop.conf.Configuration: mapred.working.dir is deprecated. Instead, use mapreduce.job.working.dir
+2014-11-05 04:50:08,915 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local844515330_0001
+2014-11-05 04:50:10,044 INFO org.apache.hadoop.mapred.LocalDistributedCacheManager: Creating symlink: /tmp/hadoop-training/mapred/local/-5621094923390994731/MAP <- /home/training/workspace2/crunchTS/MAP
+2014-11-05 04:50:10,189 INFO org.apache.hadoop.mapred.LocalDistributedCacheManager: Localized file:/tmp/crunch-746319508/p1/MAP as file:/tmp/hadoop-training/mapred/local/-5621094923390994731/MAP
+2014-11-05 04:50:10,213 WARN org.apache.hadoop.conf.Configuration: mapred.cache.localFiles is deprecated. Instead, use mapreduce.job.cache.local.files
+2014-11-05 04:50:10,385 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2014-11-05 04:50:10,386 INFO org.apache.crunch.hadoop.mapreduce.lib.jobcontrol.CrunchControlledJob: Running job "de.bitocean.crunchts.simple.ImportClickCountData: Text(in)+S0+Avro(out_1415191805435) (1/1)"
+2014-11-05 04:50:10,386 INFO org.apache.crunch.hadoop.mapreduce.lib.jobcontrol.CrunchControlledJob: Job status available at: http://localhost:8080/
+2014-11-05 04:50:10,387 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2014-11-05 04:50:10,398 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2014-11-05 04:50:10,415 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2014-11-05 04:50:10,416 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local844515330_0001_m_000000_0
+2014-11-05 04:50:10,897 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 04:50:10,899 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-000000.gz:0+87052866)
+2014-11-05 04:50:10,917 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 04:50:16,462 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:50:24,237 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:50:27,238 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:50:30,238 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:50:34,508 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:50:37,509 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:50:40,510 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:50:43,511 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:50:46,555 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:50:51,267 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:50:54,268 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:50:58,366 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:51:01,367 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:51:05,404 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:51:08,886 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:51:11,887 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:51:14,889 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:51:20,511 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:51:24,081 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:51:27,088 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:51:30,881 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:51:33,882 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:51:36,883 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:51:39,885 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:51:42,886 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:51:45,887 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:51:48,890 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:51:51,898 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:51:53,962 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:51:53,964 INFO org.apache.hadoop.mapred.Task: Task:attempt_local844515330_0001_m_000000_0 is done. And is in the process of committing
+2014-11-05 04:51:53,965 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:51:53,965 INFO org.apache.hadoop.mapred.Task: Task attempt_local844515330_0001_m_000000_0 is allowed to commit now
+2014-11-05 04:51:53,965 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Saved output of task 'attempt_local844515330_0001_m_000000_0' to file:/tmp/crunch-746319508/p1/output/_temporary/0/task_local844515330_0001_m_000000
+2014-11-05 04:51:53,965 INFO org.apache.hadoop.mapred.LocalJobRunner: map
+2014-11-05 04:51:53,967 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local844515330_0001_m_000000_0' done.
+2014-11-05 04:51:53,968 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local844515330_0001_m_000000_0
+2014-11-05 04:51:53,968 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local844515330_0001_m_000001_0
+2014-11-05 04:51:53,973 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 04:51:53,974 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-030000.gz:0+85980815)
+2014-11-05 04:51:54,313 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 04:51:59,980 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:52:02,980 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:52:05,981 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:52:08,981 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:52:11,983 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:52:14,043 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:52:16,052 INFO org.apache.hadoop.mapred.LocalJobRunner: map
+2014-11-05 04:52:16,053 INFO org.apache.hadoop.mapred.Task: Task:attempt_local844515330_0001_m_000001_0 is done. And is in the process of committing
+2014-11-05 04:52:16,054 INFO org.apache.hadoop.mapred.LocalJobRunner: map
+2014-11-05 04:52:16,057 INFO org.apache.hadoop.mapred.Task: Task attempt_local844515330_0001_m_000001_0 is allowed to commit now
+2014-11-05 04:52:16,060 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Saved output of task 'attempt_local844515330_0001_m_000001_0' to file:/tmp/crunch-746319508/p1/output/_temporary/0/task_local844515330_0001_m_000001
+2014-11-05 04:52:16,063 INFO org.apache.hadoop.mapred.LocalJobRunner: map
+2014-11-05 04:52:16,064 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local844515330_0001_m_000001_0' done.
+2014-11-05 04:52:16,064 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local844515330_0001_m_000001_0
+2014-11-05 04:52:16,064 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local844515330_0001_m_000002_0
+2014-11-05 04:52:16,066 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 04:52:16,067 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-020000.gz:0+83397233)
+2014-11-05 04:52:16,168 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 04:52:22,072 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:52:25,073 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:52:28,122 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:52:31,124 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:52:36,673 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:52:37,779 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:52:37,780 INFO org.apache.hadoop.mapred.Task: Task:attempt_local844515330_0001_m_000002_0 is done. And is in the process of committing
+2014-11-05 04:52:37,780 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:52:37,780 INFO org.apache.hadoop.mapred.Task: Task attempt_local844515330_0001_m_000002_0 is allowed to commit now
+2014-11-05 04:52:37,781 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Saved output of task 'attempt_local844515330_0001_m_000002_0' to file:/tmp/crunch-746319508/p1/output/_temporary/0/task_local844515330_0001_m_000002
+2014-11-05 04:52:37,781 INFO org.apache.hadoop.mapred.LocalJobRunner: map
+2014-11-05 04:52:37,781 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local844515330_0001_m_000002_0' done.
+2014-11-05 04:52:37,781 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local844515330_0001_m_000002_0
+2014-11-05 04:52:37,781 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local844515330_0001_m_000003_0
+2014-11-05 04:52:37,782 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 04:52:37,782 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-010000.gz:0+78524252)
+2014-11-05 04:52:37,851 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 04:52:43,786 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:52:46,786 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:52:49,787 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:52:51,993 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:52:51,993 INFO org.apache.hadoop.mapred.Task: Task:attempt_local844515330_0001_m_000003_0 is done. And is in the process of committing
+2014-11-05 04:52:51,994 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 04:52:51,994 INFO org.apache.hadoop.mapred.Task: Task attempt_local844515330_0001_m_000003_0 is allowed to commit now
+2014-11-05 04:52:51,994 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Saved output of task 'attempt_local844515330_0001_m_000003_0' to file:/tmp/crunch-746319508/p1/output/_temporary/0/task_local844515330_0001_m_000003
+2014-11-05 04:52:51,994 INFO org.apache.hadoop.mapred.LocalJobRunner: map
+2014-11-05 04:52:51,995 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local844515330_0001_m_000003_0' done.
+2014-11-05 04:52:51,995 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local844515330_0001_m_000003_0
+2014-11-05 04:52:51,995 INFO org.apache.hadoop.mapred.LocalJobRunner: Map task executor complete.
+2014-11-05 05:01:57,208 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2014-11-05 05:01:58,061 INFO org.apache.crunch.io.impl.FileTargetImpl: Will write output files to new path: out_1415192517621
+2014-11-05 05:01:58,099 WARN org.apache.hadoop.conf.Configuration: mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2014-11-05 05:01:58,411 WARN org.apache.hadoop.conf.Configuration: session.id is deprecated. Instead, use dfs.metrics.session-id
+2014-11-05 05:01:58,412 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2014-11-05 05:01:58,626 WARN org.apache.hadoop.mapreduce.JobSubmitter: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2014-11-05 05:01:58,737 WARN org.apache.hadoop.conf.Configuration: dfs.block.size is deprecated. Instead, use dfs.blocksize
+2014-11-05 05:01:58,741 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 4
+2014-11-05 05:01:58,812 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:4
+2014-11-05 05:01:58,835 WARN org.apache.hadoop.conf.Configuration: mapred.cache.files is deprecated. Instead, use mapreduce.job.cache.files
+2014-11-05 05:01:58,835 WARN org.apache.hadoop.conf.Configuration: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+2014-11-05 05:01:58,835 WARN org.apache.hadoop.conf.Configuration: mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2014-11-05 05:01:58,835 WARN org.apache.hadoop.conf.Configuration: mapreduce.map.class is deprecated. Instead, use mapreduce.job.map.class
+2014-11-05 05:01:58,835 WARN org.apache.hadoop.conf.Configuration: mapred.job.name is deprecated. Instead, use mapreduce.job.name
+2014-11-05 05:01:58,836 WARN org.apache.hadoop.conf.Configuration: mapreduce.inputformat.class is deprecated. Instead, use mapreduce.job.inputformat.class
+2014-11-05 05:01:58,836 WARN org.apache.hadoop.conf.Configuration: mapred.output.dir is deprecated. Instead, use mapreduce.output.fileoutputformat.outputdir
+2014-11-05 05:01:58,836 WARN org.apache.hadoop.conf.Configuration: mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
+2014-11-05 05:01:58,836 WARN org.apache.hadoop.conf.Configuration: mapred.cache.files.timestamps is deprecated. Instead, use mapreduce.job.cache.files.timestamps
+2014-11-05 05:01:58,836 WARN org.apache.hadoop.conf.Configuration: mapred.working.dir is deprecated. Instead, use mapreduce.job.working.dir
+2014-11-05 05:01:58,970 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local912695241_0001
+2014-11-05 05:01:59,434 INFO org.apache.hadoop.mapred.LocalDistributedCacheManager: Creating symlink: /tmp/hadoop-training/mapred/local/7575305858091619610/MAP <- /home/training/workspace2/crunchTS/MAP
+2014-11-05 05:01:59,452 INFO org.apache.hadoop.mapred.LocalDistributedCacheManager: Localized file:/tmp/crunch-1461791383/p1/MAP as file:/tmp/hadoop-training/mapred/local/7575305858091619610/MAP
+2014-11-05 05:01:59,476 WARN org.apache.hadoop.conf.Configuration: mapred.cache.localFiles is deprecated. Instead, use mapreduce.job.cache.local.files
+2014-11-05 05:01:59,643 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2014-11-05 05:01:59,644 INFO org.apache.crunch.hadoop.mapreduce.lib.jobcontrol.CrunchControlledJob: Running job "de.bitocean.crunchts.simple.ImportClickCountData: Text(in)+S0+Avro(out_1415192517621) (1/1)"
+2014-11-05 05:01:59,644 INFO org.apache.crunch.hadoop.mapreduce.lib.jobcontrol.CrunchControlledJob: Job status available at: http://localhost:8080/
+2014-11-05 05:01:59,645 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2014-11-05 05:01:59,656 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2014-11-05 05:01:59,672 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2014-11-05 05:01:59,673 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local912695241_0001_m_000000_0
+2014-11-05 05:01:59,755 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 05:01:59,757 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-000000.gz:0+87052866)
+2014-11-05 05:01:59,787 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 05:02:05,722 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 05:02:08,724 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 05:02:11,472 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 05:02:11,472 INFO org.apache.hadoop.mapred.Task: Task:attempt_local912695241_0001_m_000000_0 is done. And is in the process of committing
+2014-11-05 05:02:11,473 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 05:02:11,473 INFO org.apache.hadoop.mapred.Task: Task attempt_local912695241_0001_m_000000_0 is allowed to commit now
+2014-11-05 05:02:11,473 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Saved output of task 'attempt_local912695241_0001_m_000000_0' to file:/tmp/crunch-1461791383/p1/output/_temporary/0/task_local912695241_0001_m_000000
+2014-11-05 05:02:11,473 INFO org.apache.hadoop.mapred.LocalJobRunner: map
+2014-11-05 05:02:11,473 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local912695241_0001_m_000000_0' done.
+2014-11-05 05:02:11,474 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local912695241_0001_m_000000_0
+2014-11-05 05:02:11,474 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local912695241_0001_m_000001_0
+2014-11-05 05:02:11,474 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 05:02:11,478 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-030000.gz:0+85980815)
+2014-11-05 05:02:11,482 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 05:02:17,480 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 05:02:20,480 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 05:02:20,808 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 05:02:20,809 INFO org.apache.hadoop.mapred.Task: Task:attempt_local912695241_0001_m_000001_0 is done. And is in the process of committing
+2014-11-05 05:02:20,809 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 05:02:20,809 INFO org.apache.hadoop.mapred.Task: Task attempt_local912695241_0001_m_000001_0 is allowed to commit now
+2014-11-05 05:02:20,810 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Saved output of task 'attempt_local912695241_0001_m_000001_0' to file:/tmp/crunch-1461791383/p1/output/_temporary/0/task_local912695241_0001_m_000001
+2014-11-05 05:02:20,810 INFO org.apache.hadoop.mapred.LocalJobRunner: map
+2014-11-05 05:02:20,810 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local912695241_0001_m_000001_0' done.
+2014-11-05 05:02:20,810 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local912695241_0001_m_000001_0
+2014-11-05 05:02:20,810 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local912695241_0001_m_000002_0
+2014-11-05 05:02:20,811 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 05:02:20,812 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-020000.gz:0+83397233)
+2014-11-05 05:02:20,831 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 05:02:26,814 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 05:02:29,720 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 05:02:29,721 INFO org.apache.hadoop.mapred.Task: Task:attempt_local912695241_0001_m_000002_0 is done. And is in the process of committing
+2014-11-05 05:02:29,721 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 05:02:29,721 INFO org.apache.hadoop.mapred.Task: Task attempt_local912695241_0001_m_000002_0 is allowed to commit now
+2014-11-05 05:02:29,722 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Saved output of task 'attempt_local912695241_0001_m_000002_0' to file:/tmp/crunch-1461791383/p1/output/_temporary/0/task_local912695241_0001_m_000002
+2014-11-05 05:02:29,722 INFO org.apache.hadoop.mapred.LocalJobRunner: map
+2014-11-05 05:02:29,722 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local912695241_0001_m_000002_0' done.
+2014-11-05 05:02:29,722 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local912695241_0001_m_000002_0
+2014-11-05 05:02:29,722 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local912695241_0001_m_000003_0
+2014-11-05 05:02:29,723 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 05:02:29,724 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-010000.gz:0+78524252)
+2014-11-05 05:02:29,728 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 05:02:35,729 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 05:02:37,480 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 05:02:37,480 INFO org.apache.hadoop.mapred.Task: Task:attempt_local912695241_0001_m_000003_0 is done. And is in the process of committing
+2014-11-05 05:02:37,481 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 05:02:37,481 INFO org.apache.hadoop.mapred.Task: Task attempt_local912695241_0001_m_000003_0 is allowed to commit now
+2014-11-05 05:02:37,481 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Saved output of task 'attempt_local912695241_0001_m_000003_0' to file:/tmp/crunch-1461791383/p1/output/_temporary/0/task_local912695241_0001_m_000003
+2014-11-05 05:02:37,481 INFO org.apache.hadoop.mapred.LocalJobRunner: map
+2014-11-05 05:02:37,481 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local912695241_0001_m_000003_0' done.
+2014-11-05 05:02:37,481 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local912695241_0001_m_000003_0
+2014-11-05 05:02:37,481 INFO org.apache.hadoop.mapred.LocalJobRunner: Map task executor complete.
+2014-11-05 06:51:30,449 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2014-11-05 06:51:31,362 INFO org.apache.crunch.io.impl.FileTargetImpl: Will write output files to new path: out_1415199091007
+2014-11-05 06:51:31,383 WARN org.apache.hadoop.conf.Configuration: mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2014-11-05 06:51:31,800 WARN org.apache.hadoop.conf.Configuration: session.id is deprecated. Instead, use dfs.metrics.session-id
+2014-11-05 06:51:31,802 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2014-11-05 06:51:31,875 WARN org.apache.hadoop.mapreduce.JobSubmitter: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2014-11-05 06:51:31,940 WARN org.apache.hadoop.conf.Configuration: dfs.block.size is deprecated. Instead, use dfs.blocksize
+2014-11-05 06:51:31,950 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 4
+2014-11-05 06:51:32,033 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:4
+2014-11-05 06:51:32,066 WARN org.apache.hadoop.conf.Configuration: mapred.cache.files is deprecated. Instead, use mapreduce.job.cache.files
+2014-11-05 06:51:32,066 WARN org.apache.hadoop.conf.Configuration: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+2014-11-05 06:51:32,066 WARN org.apache.hadoop.conf.Configuration: mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2014-11-05 06:51:32,067 WARN org.apache.hadoop.conf.Configuration: mapreduce.map.class is deprecated. Instead, use mapreduce.job.map.class
+2014-11-05 06:51:32,067 WARN org.apache.hadoop.conf.Configuration: mapred.job.name is deprecated. Instead, use mapreduce.job.name
+2014-11-05 06:51:32,067 WARN org.apache.hadoop.conf.Configuration: mapreduce.inputformat.class is deprecated. Instead, use mapreduce.job.inputformat.class
+2014-11-05 06:51:32,067 WARN org.apache.hadoop.conf.Configuration: mapred.output.dir is deprecated. Instead, use mapreduce.output.fileoutputformat.outputdir
+2014-11-05 06:51:32,067 WARN org.apache.hadoop.conf.Configuration: mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
+2014-11-05 06:51:32,067 WARN org.apache.hadoop.conf.Configuration: mapred.cache.files.timestamps is deprecated. Instead, use mapreduce.job.cache.files.timestamps
+2014-11-05 06:51:32,068 WARN org.apache.hadoop.conf.Configuration: mapred.working.dir is deprecated. Instead, use mapreduce.job.working.dir
+2014-11-05 06:51:32,204 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local86133089_0001
+2014-11-05 06:51:32,722 INFO org.apache.hadoop.mapred.LocalDistributedCacheManager: Creating symlink: /tmp/hadoop-training/mapred/local/-6991511021107046373/MAP <- /home/training/workspace2/crunchTS/MAP
+2014-11-05 06:51:32,744 INFO org.apache.hadoop.mapred.LocalDistributedCacheManager: Localized file:/tmp/crunch-1799035204/p1/MAP as file:/tmp/hadoop-training/mapred/local/-6991511021107046373/MAP
+2014-11-05 06:51:32,752 WARN org.apache.hadoop.conf.Configuration: mapred.cache.localFiles is deprecated. Instead, use mapreduce.job.cache.local.files
+2014-11-05 06:51:32,887 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2014-11-05 06:51:32,888 INFO org.apache.crunch.hadoop.mapreduce.lib.jobcontrol.CrunchControlledJob: Running job "de.bitocean.crunchts.simple.ImportClickCountData: Text(in)+S0+Avro(out_1415199091007) (1/1)"
+2014-11-05 06:51:32,888 INFO org.apache.crunch.hadoop.mapreduce.lib.jobcontrol.CrunchControlledJob: Job status available at: http://localhost:8080/
+2014-11-05 06:51:32,889 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2014-11-05 06:51:32,900 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2014-11-05 06:51:32,919 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2014-11-05 06:51:32,919 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local86133089_0001_m_000000_0
+2014-11-05 06:51:33,032 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 06:51:33,034 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-000000.gz:0+87052866)
+2014-11-05 06:51:33,057 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 06:51:35,737 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local86133089_0001_m_000001_0
+2014-11-05 06:51:35,738 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 06:51:35,739 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-030000.gz:0+85980815)
+2014-11-05 06:51:35,744 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 06:51:36,675 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local86133089_0001_m_000002_0
+2014-11-05 06:51:36,681 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 06:51:36,683 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-020000.gz:0+83397233)
+2014-11-05 06:51:36,689 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 06:51:37,498 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local86133089_0001_m_000003_0
+2014-11-05 06:51:37,499 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 06:51:37,500 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-010000.gz:0+78524252)
+2014-11-05 06:51:37,535 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 06:51:38,388 INFO org.apache.hadoop.mapred.LocalJobRunner: Map task executor complete.
+2014-11-05 06:51:38,389 WARN org.apache.hadoop.mapred.LocalJobRunner: job_local86133089_0001
+java.lang.Exception: java.lang.ArrayIndexOutOfBoundsException: 1
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:401)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 1
+	at de.bitocean.crunchts.simple.ImportClickCountData$1.process(ImportClickCountData.java:87)
+	at de.bitocean.crunchts.simple.ImportClickCountData$1.process(ImportClickCountData.java:1)
+	at org.apache.crunch.impl.mr.run.RTNode.process(RTNode.java:99)
+	at org.apache.crunch.impl.mr.emit.IntermediateEmitter.emit(IntermediateEmitter.java:56)
+	at org.apache.crunch.MapFn.process(MapFn.java:34)
+	at org.apache.crunch.impl.mr.run.RTNode.process(RTNode.java:99)
+	at org.apache.crunch.impl.mr.run.RTNode.process(RTNode.java:110)
+	at org.apache.crunch.impl.mr.run.CrunchMapper.map(CrunchMapper.java:60)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:144)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:756)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:338)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:233)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+2014-11-05 06:51:38,980 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 06:53:25,577 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2014-11-05 06:53:26,618 INFO org.apache.crunch.io.impl.FileTargetImpl: Will write output files to new path: out_1415199206053
+2014-11-05 06:53:26,640 WARN org.apache.hadoop.conf.Configuration: mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2014-11-05 06:53:26,961 WARN org.apache.hadoop.conf.Configuration: session.id is deprecated. Instead, use dfs.metrics.session-id
+2014-11-05 06:53:26,962 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2014-11-05 06:53:27,052 WARN org.apache.hadoop.mapreduce.JobSubmitter: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2014-11-05 06:53:27,162 WARN org.apache.hadoop.conf.Configuration: dfs.block.size is deprecated. Instead, use dfs.blocksize
+2014-11-05 06:53:27,172 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 4
+2014-11-05 06:53:27,254 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:4
+2014-11-05 06:53:27,282 WARN org.apache.hadoop.conf.Configuration: mapred.cache.files is deprecated. Instead, use mapreduce.job.cache.files
+2014-11-05 06:53:27,282 WARN org.apache.hadoop.conf.Configuration: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+2014-11-05 06:53:27,282 WARN org.apache.hadoop.conf.Configuration: mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2014-11-05 06:53:27,282 WARN org.apache.hadoop.conf.Configuration: mapreduce.map.class is deprecated. Instead, use mapreduce.job.map.class
+2014-11-05 06:53:27,282 WARN org.apache.hadoop.conf.Configuration: mapred.job.name is deprecated. Instead, use mapreduce.job.name
+2014-11-05 06:53:27,283 WARN org.apache.hadoop.conf.Configuration: mapreduce.inputformat.class is deprecated. Instead, use mapreduce.job.inputformat.class
+2014-11-05 06:53:27,283 WARN org.apache.hadoop.conf.Configuration: mapred.output.dir is deprecated. Instead, use mapreduce.output.fileoutputformat.outputdir
+2014-11-05 06:53:27,283 WARN org.apache.hadoop.conf.Configuration: mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
+2014-11-05 06:53:27,283 WARN org.apache.hadoop.conf.Configuration: mapred.cache.files.timestamps is deprecated. Instead, use mapreduce.job.cache.files.timestamps
+2014-11-05 06:53:27,283 WARN org.apache.hadoop.conf.Configuration: mapred.working.dir is deprecated. Instead, use mapreduce.job.working.dir
+2014-11-05 06:53:27,429 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local421890211_0001
+2014-11-05 06:53:27,997 INFO org.apache.hadoop.mapred.LocalDistributedCacheManager: Creating symlink: /tmp/hadoop-training/mapred/local/6272559143883804377/MAP <- /home/training/workspace2/crunchTS/MAP
+2014-11-05 06:53:28,001 INFO org.apache.hadoop.mapred.LocalDistributedCacheManager: Localized file:/tmp/crunch-1873239319/p1/MAP as file:/tmp/hadoop-training/mapred/local/6272559143883804377/MAP
+2014-11-05 06:53:28,010 WARN org.apache.hadoop.conf.Configuration: mapred.cache.localFiles is deprecated. Instead, use mapreduce.job.cache.local.files
+2014-11-05 06:53:28,149 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2014-11-05 06:53:28,149 INFO org.apache.crunch.hadoop.mapreduce.lib.jobcontrol.CrunchControlledJob: Running job "de.bitocean.crunchts.simple.ImportClickCountData: Text(in)+S0+Avro(out_1415199206053) (1/1)"
+2014-11-05 06:53:28,149 INFO org.apache.crunch.hadoop.mapreduce.lib.jobcontrol.CrunchControlledJob: Job status available at: http://localhost:8080/
+2014-11-05 06:53:28,150 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2014-11-05 06:53:28,158 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2014-11-05 06:53:28,174 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2014-11-05 06:53:28,174 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local421890211_0001_m_000000_0
+2014-11-05 06:53:28,244 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 06:53:28,247 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-000000.gz:0+87052866)
+2014-11-05 06:53:28,280 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 06:53:31,795 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local421890211_0001_m_000001_0
+2014-11-05 06:53:31,796 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 06:53:31,797 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-030000.gz:0+85980815)
+2014-11-05 06:53:31,809 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 06:53:32,546 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local421890211_0001_m_000002_0
+2014-11-05 06:53:32,547 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 06:53:32,548 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-020000.gz:0+83397233)
+2014-11-05 06:53:32,554 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 06:53:33,188 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local421890211_0001_m_000003_0
+2014-11-05 06:53:33,189 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 06:53:33,190 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-010000.gz:0+78524252)
+2014-11-05 06:53:33,195 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 06:54:57,668 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2014-11-05 06:54:58,669 INFO org.apache.crunch.io.impl.FileTargetImpl: Will write output files to new path: out_1415199298135
+2014-11-05 06:54:58,691 WARN org.apache.hadoop.conf.Configuration: mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2014-11-05 06:54:59,026 WARN org.apache.hadoop.conf.Configuration: session.id is deprecated. Instead, use dfs.metrics.session-id
+2014-11-05 06:54:59,027 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2014-11-05 06:54:59,140 WARN org.apache.hadoop.mapreduce.JobSubmitter: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2014-11-05 06:54:59,200 WARN org.apache.hadoop.conf.Configuration: dfs.block.size is deprecated. Instead, use dfs.blocksize
+2014-11-05 06:54:59,214 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 4
+2014-11-05 06:54:59,320 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:4
+2014-11-05 06:54:59,347 WARN org.apache.hadoop.conf.Configuration: mapred.cache.files is deprecated. Instead, use mapreduce.job.cache.files
+2014-11-05 06:54:59,348 WARN org.apache.hadoop.conf.Configuration: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+2014-11-05 06:54:59,348 WARN org.apache.hadoop.conf.Configuration: mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2014-11-05 06:54:59,348 WARN org.apache.hadoop.conf.Configuration: mapreduce.map.class is deprecated. Instead, use mapreduce.job.map.class
+2014-11-05 06:54:59,348 WARN org.apache.hadoop.conf.Configuration: mapred.job.name is deprecated. Instead, use mapreduce.job.name
+2014-11-05 06:54:59,348 WARN org.apache.hadoop.conf.Configuration: mapreduce.inputformat.class is deprecated. Instead, use mapreduce.job.inputformat.class
+2014-11-05 06:54:59,348 WARN org.apache.hadoop.conf.Configuration: mapred.output.dir is deprecated. Instead, use mapreduce.output.fileoutputformat.outputdir
+2014-11-05 06:54:59,349 WARN org.apache.hadoop.conf.Configuration: mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
+2014-11-05 06:54:59,349 WARN org.apache.hadoop.conf.Configuration: mapred.cache.files.timestamps is deprecated. Instead, use mapreduce.job.cache.files.timestamps
+2014-11-05 06:54:59,349 WARN org.apache.hadoop.conf.Configuration: mapred.working.dir is deprecated. Instead, use mapreduce.job.working.dir
+2014-11-05 06:54:59,462 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local804186832_0001
+2014-11-05 06:54:59,999 INFO org.apache.hadoop.mapred.LocalDistributedCacheManager: Localized file:/tmp/crunch-1932097012/p1/MAP as file:/tmp/hadoop-training/mapred/local/-5846544592335192216/MAP
+2014-11-05 06:55:00,011 WARN org.apache.hadoop.conf.Configuration: mapred.cache.localFiles is deprecated. Instead, use mapreduce.job.cache.local.files
+2014-11-05 06:55:00,162 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2014-11-05 06:55:00,164 INFO org.apache.crunch.hadoop.mapreduce.lib.jobcontrol.CrunchControlledJob: Running job "de.bitocean.crunchts.simple.ImportClickCountData: Text(in)+S0+Avro(out_1415199298135) (1/1)"
+2014-11-05 06:55:00,164 INFO org.apache.crunch.hadoop.mapreduce.lib.jobcontrol.CrunchControlledJob: Job status available at: http://localhost:8080/
+2014-11-05 06:55:00,165 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2014-11-05 06:55:00,172 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2014-11-05 06:55:00,190 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2014-11-05 06:55:00,191 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local804186832_0001_m_000000_0
+2014-11-05 06:55:00,252 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 06:55:00,255 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-000000.gz:0+87052866)
+2014-11-05 06:55:00,290 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 06:55:02,812 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local804186832_0001_m_000001_0
+2014-11-05 06:55:02,813 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 06:55:02,814 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-030000.gz:0+85980815)
+2014-11-05 06:55:02,825 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 06:55:03,569 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local804186832_0001_m_000002_0
+2014-11-05 06:55:03,570 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 06:55:03,570 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-020000.gz:0+83397233)
+2014-11-05 06:55:03,575 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 06:55:04,245 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local804186832_0001_m_000003_0
+2014-11-05 06:55:04,246 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 06:55:04,247 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-010000.gz:0+78524252)
+2014-11-05 06:55:04,252 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 06:55:04,890 INFO org.apache.hadoop.mapred.LocalJobRunner: Map task executor complete.
+2014-11-05 06:55:04,892 WARN org.apache.hadoop.mapred.LocalJobRunner: job_local804186832_0001
+java.lang.Exception: java.lang.NullPointerException
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:401)
+Caused by: java.lang.NullPointerException
+	at de.bitocean.crunchts.simple.ImportClickCountData$1.process(ImportClickCountData.java:85)
+	at de.bitocean.crunchts.simple.ImportClickCountData$1.process(ImportClickCountData.java:1)
+	at org.apache.crunch.impl.mr.run.RTNode.process(RTNode.java:99)
+	at org.apache.crunch.impl.mr.emit.IntermediateEmitter.emit(IntermediateEmitter.java:56)
+	at org.apache.crunch.MapFn.process(MapFn.java:34)
+	at org.apache.crunch.impl.mr.run.RTNode.process(RTNode.java:99)
+	at org.apache.crunch.impl.mr.run.RTNode.process(RTNode.java:110)
+	at org.apache.crunch.impl.mr.run.CrunchMapper.map(CrunchMapper.java:60)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:144)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:756)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:338)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:233)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+2014-11-05 06:55:06,244 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 09:19:21,093 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2014-11-05 09:19:22,059 INFO org.apache.crunch.io.impl.FileTargetImpl: Will write output files to new path: out_1415207961651
+2014-11-05 09:19:22,112 WARN org.apache.hadoop.conf.Configuration: mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2014-11-05 09:19:22,522 WARN org.apache.hadoop.conf.Configuration: session.id is deprecated. Instead, use dfs.metrics.session-id
+2014-11-05 09:19:22,523 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2014-11-05 09:19:22,589 WARN org.apache.hadoop.mapreduce.JobSubmitter: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2014-11-05 09:19:22,722 WARN org.apache.hadoop.conf.Configuration: dfs.block.size is deprecated. Instead, use dfs.blocksize
+2014-11-05 09:19:22,724 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 4
+2014-11-05 09:19:22,752 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:4
+2014-11-05 09:19:22,761 WARN org.apache.hadoop.conf.Configuration: mapred.cache.files is deprecated. Instead, use mapreduce.job.cache.files
+2014-11-05 09:19:22,761 WARN org.apache.hadoop.conf.Configuration: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+2014-11-05 09:19:22,761 WARN org.apache.hadoop.conf.Configuration: mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2014-11-05 09:19:22,762 WARN org.apache.hadoop.conf.Configuration: mapreduce.map.class is deprecated. Instead, use mapreduce.job.map.class
+2014-11-05 09:19:22,762 WARN org.apache.hadoop.conf.Configuration: mapred.job.name is deprecated. Instead, use mapreduce.job.name
+2014-11-05 09:19:22,762 WARN org.apache.hadoop.conf.Configuration: mapreduce.inputformat.class is deprecated. Instead, use mapreduce.job.inputformat.class
+2014-11-05 09:19:22,762 WARN org.apache.hadoop.conf.Configuration: mapred.output.dir is deprecated. Instead, use mapreduce.output.fileoutputformat.outputdir
+2014-11-05 09:19:22,762 WARN org.apache.hadoop.conf.Configuration: mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
+2014-11-05 09:19:22,762 WARN org.apache.hadoop.conf.Configuration: mapred.cache.files.timestamps is deprecated. Instead, use mapreduce.job.cache.files.timestamps
+2014-11-05 09:19:22,762 WARN org.apache.hadoop.conf.Configuration: mapred.working.dir is deprecated. Instead, use mapreduce.job.working.dir
+2014-11-05 09:19:22,853 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local1539478569_0001
+2014-11-05 09:19:23,321 INFO org.apache.hadoop.mapred.LocalDistributedCacheManager: Localized file:/tmp/crunch-321674442/p1/MAP as file:/tmp/hadoop-training/mapred/local/1714369677975735749/MAP
+2014-11-05 09:19:23,334 WARN org.apache.hadoop.conf.Configuration: mapred.cache.localFiles is deprecated. Instead, use mapreduce.job.cache.local.files
+2014-11-05 09:19:23,479 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2014-11-05 09:19:23,480 INFO org.apache.crunch.hadoop.mapreduce.lib.jobcontrol.CrunchControlledJob: Running job "de.bitocean.crunchts.simple.ImportClickCountData: Text(in)+S0+Avro(out_1415207961651) (1/1)"
+2014-11-05 09:19:23,480 INFO org.apache.crunch.hadoop.mapreduce.lib.jobcontrol.CrunchControlledJob: Job status available at: http://localhost:8080/
+2014-11-05 09:19:23,484 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2014-11-05 09:19:23,492 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2014-11-05 09:19:23,507 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2014-11-05 09:19:23,508 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1539478569_0001_m_000000_0
+2014-11-05 09:19:23,595 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 09:19:23,598 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-000000.gz:0+87052866)
+2014-11-05 09:19:23,635 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 09:19:26,630 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1539478569_0001_m_000001_0
+2014-11-05 09:19:26,632 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 09:19:26,635 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-030000.gz:0+85980815)
+2014-11-05 09:19:26,762 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 09:19:27,524 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1539478569_0001_m_000002_0
+2014-11-05 09:19:27,526 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 09:19:27,527 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-020000.gz:0+83397233)
+2014-11-05 09:19:27,532 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 09:19:28,171 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1539478569_0001_m_000003_0
+2014-11-05 09:19:28,172 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 09:19:28,173 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-010000.gz:0+78524252)
+2014-11-05 09:19:28,178 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 09:19:28,864 INFO org.apache.hadoop.mapred.LocalJobRunner: Map task executor complete.
+2014-11-05 09:19:28,865 WARN org.apache.hadoop.mapred.LocalJobRunner: job_local1539478569_0001
+java.lang.Exception: java.lang.ClassCastException: org.apache.crunch.impl.mr.run.CrunchInputSplit cannot be cast to com.google.common.base.Supplier
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:401)
+Caused by: java.lang.ClassCastException: org.apache.crunch.impl.mr.run.CrunchInputSplit cannot be cast to com.google.common.base.Supplier
+	at de.bitocean.crunchts.simple.ImportClickCountData$1.process(ImportClickCountData.java:82)
+	at de.bitocean.crunchts.simple.ImportClickCountData$1.process(ImportClickCountData.java:1)
+	at org.apache.crunch.impl.mr.run.RTNode.process(RTNode.java:99)
+	at org.apache.crunch.impl.mr.emit.IntermediateEmitter.emit(IntermediateEmitter.java:56)
+	at org.apache.crunch.MapFn.process(MapFn.java:34)
+	at org.apache.crunch.impl.mr.run.RTNode.process(RTNode.java:99)
+	at org.apache.crunch.impl.mr.run.RTNode.process(RTNode.java:110)
+	at org.apache.crunch.impl.mr.run.CrunchMapper.map(CrunchMapper.java:60)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:144)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:756)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:338)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:233)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+2014-11-05 09:19:29,568 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 09:23:19,032 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2014-11-05 09:23:19,816 INFO org.apache.crunch.io.impl.FileTargetImpl: Will write output files to new path: out_1415208199420
+2014-11-05 09:23:19,852 WARN org.apache.hadoop.conf.Configuration: mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2014-11-05 09:23:20,113 WARN org.apache.hadoop.conf.Configuration: session.id is deprecated. Instead, use dfs.metrics.session-id
+2014-11-05 09:23:20,114 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2014-11-05 09:23:20,163 WARN org.apache.hadoop.mapreduce.JobSubmitter: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2014-11-05 09:23:20,229 WARN org.apache.hadoop.conf.Configuration: dfs.block.size is deprecated. Instead, use dfs.blocksize
+2014-11-05 09:23:20,234 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 4
+2014-11-05 09:23:20,316 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:4
+2014-11-05 09:23:20,346 WARN org.apache.hadoop.conf.Configuration: mapred.cache.files is deprecated. Instead, use mapreduce.job.cache.files
+2014-11-05 09:23:20,346 WARN org.apache.hadoop.conf.Configuration: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+2014-11-05 09:23:20,347 WARN org.apache.hadoop.conf.Configuration: mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2014-11-05 09:23:20,347 WARN org.apache.hadoop.conf.Configuration: mapreduce.map.class is deprecated. Instead, use mapreduce.job.map.class
+2014-11-05 09:23:20,347 WARN org.apache.hadoop.conf.Configuration: mapred.job.name is deprecated. Instead, use mapreduce.job.name
+2014-11-05 09:23:20,347 WARN org.apache.hadoop.conf.Configuration: mapreduce.inputformat.class is deprecated. Instead, use mapreduce.job.inputformat.class
+2014-11-05 09:23:20,347 WARN org.apache.hadoop.conf.Configuration: mapred.output.dir is deprecated. Instead, use mapreduce.output.fileoutputformat.outputdir
+2014-11-05 09:23:20,347 WARN org.apache.hadoop.conf.Configuration: mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
+2014-11-05 09:23:20,347 WARN org.apache.hadoop.conf.Configuration: mapred.cache.files.timestamps is deprecated. Instead, use mapreduce.job.cache.files.timestamps
+2014-11-05 09:23:20,348 WARN org.apache.hadoop.conf.Configuration: mapred.working.dir is deprecated. Instead, use mapreduce.job.working.dir
+2014-11-05 09:23:20,497 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local664704548_0001
+2014-11-05 09:23:20,955 INFO org.apache.hadoop.mapred.LocalDistributedCacheManager: Localized file:/tmp/crunch-932592609/p1/MAP as file:/tmp/hadoop-training/mapred/local/-6070154940127171197/MAP
+2014-11-05 09:23:20,959 WARN org.apache.hadoop.conf.Configuration: mapred.cache.localFiles is deprecated. Instead, use mapreduce.job.cache.local.files
+2014-11-05 09:23:21,070 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2014-11-05 09:23:21,070 INFO org.apache.crunch.hadoop.mapreduce.lib.jobcontrol.CrunchControlledJob: Running job "de.bitocean.crunchts.simple.ImportClickCountData: Text(in)+S0+Avro(out_1415208199420) (1/1)"
+2014-11-05 09:23:21,070 INFO org.apache.crunch.hadoop.mapreduce.lib.jobcontrol.CrunchControlledJob: Job status available at: http://localhost:8080/
+2014-11-05 09:23:21,071 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2014-11-05 09:23:21,079 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2014-11-05 09:23:21,093 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2014-11-05 09:23:21,093 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local664704548_0001_m_000000_0
+2014-11-05 09:23:21,134 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 09:23:21,136 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-000000.gz:0+87052866)
+2014-11-05 09:23:21,159 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 09:23:23,997 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local664704548_0001_m_000001_0
+2014-11-05 09:23:23,998 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 09:23:23,999 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-030000.gz:0+85980815)
+2014-11-05 09:23:24,004 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 09:23:24,807 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local664704548_0001_m_000002_0
+2014-11-05 09:23:24,808 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 09:23:24,809 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-020000.gz:0+83397233)
+2014-11-05 09:23:24,813 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 09:23:25,512 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local664704548_0001_m_000003_0
+2014-11-05 09:23:25,513 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 09:23:25,514 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-010000.gz:0+78524252)
+2014-11-05 09:23:25,518 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 09:23:26,211 INFO org.apache.hadoop.mapred.LocalJobRunner: Map task executor complete.
+2014-11-05 09:23:26,213 WARN org.apache.hadoop.mapred.LocalJobRunner: job_local664704548_0001
+java.lang.Exception: java.lang.ClassCastException: org.apache.crunch.impl.mr.run.CrunchInputSplit cannot be cast to org.apache.hadoop.mapreduce.lib.input.FileSplit
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:401)
+Caused by: java.lang.ClassCastException: org.apache.crunch.impl.mr.run.CrunchInputSplit cannot be cast to org.apache.hadoop.mapreduce.lib.input.FileSplit
+	at de.bitocean.crunchts.simple.ImportClickCountData$1.process(ImportClickCountData.java:83)
+	at de.bitocean.crunchts.simple.ImportClickCountData$1.process(ImportClickCountData.java:1)
+	at org.apache.crunch.impl.mr.run.RTNode.process(RTNode.java:99)
+	at org.apache.crunch.impl.mr.emit.IntermediateEmitter.emit(IntermediateEmitter.java:56)
+	at org.apache.crunch.MapFn.process(MapFn.java:34)
+	at org.apache.crunch.impl.mr.run.RTNode.process(RTNode.java:99)
+	at org.apache.crunch.impl.mr.run.RTNode.process(RTNode.java:110)
+	at org.apache.crunch.impl.mr.run.CrunchMapper.map(CrunchMapper.java:60)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:144)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:756)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:338)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:233)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+2014-11-05 09:23:27,132 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 09:25:29,734 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2014-11-05 09:25:30,644 INFO org.apache.crunch.io.impl.FileTargetImpl: Will write output files to new path: out_1415208330230
+2014-11-05 09:25:30,681 WARN org.apache.hadoop.conf.Configuration: mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2014-11-05 09:25:30,999 WARN org.apache.hadoop.conf.Configuration: session.id is deprecated. Instead, use dfs.metrics.session-id
+2014-11-05 09:25:31,003 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2014-11-05 09:25:31,057 WARN org.apache.hadoop.mapreduce.JobSubmitter: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2014-11-05 09:25:31,136 WARN org.apache.hadoop.conf.Configuration: dfs.block.size is deprecated. Instead, use dfs.blocksize
+2014-11-05 09:25:31,140 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 4
+2014-11-05 09:25:31,240 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:4
+2014-11-05 09:25:31,273 WARN org.apache.hadoop.conf.Configuration: mapred.cache.files is deprecated. Instead, use mapreduce.job.cache.files
+2014-11-05 09:25:31,273 WARN org.apache.hadoop.conf.Configuration: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+2014-11-05 09:25:31,273 WARN org.apache.hadoop.conf.Configuration: mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2014-11-05 09:25:31,273 WARN org.apache.hadoop.conf.Configuration: mapreduce.map.class is deprecated. Instead, use mapreduce.job.map.class
+2014-11-05 09:25:31,274 WARN org.apache.hadoop.conf.Configuration: mapred.job.name is deprecated. Instead, use mapreduce.job.name
+2014-11-05 09:25:31,274 WARN org.apache.hadoop.conf.Configuration: mapreduce.inputformat.class is deprecated. Instead, use mapreduce.job.inputformat.class
+2014-11-05 09:25:31,274 WARN org.apache.hadoop.conf.Configuration: mapred.output.dir is deprecated. Instead, use mapreduce.output.fileoutputformat.outputdir
+2014-11-05 09:25:31,274 WARN org.apache.hadoop.conf.Configuration: mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
+2014-11-05 09:25:31,274 WARN org.apache.hadoop.conf.Configuration: mapred.cache.files.timestamps is deprecated. Instead, use mapreduce.job.cache.files.timestamps
+2014-11-05 09:25:31,274 WARN org.apache.hadoop.conf.Configuration: mapred.working.dir is deprecated. Instead, use mapreduce.job.working.dir
+2014-11-05 09:25:31,441 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local781356117_0001
+2014-11-05 09:25:31,990 INFO org.apache.hadoop.mapred.LocalDistributedCacheManager: Localized file:/tmp/crunch-787763197/p1/MAP as file:/tmp/hadoop-training/mapred/local/-8457916279180649415/MAP
+2014-11-05 09:25:31,994 WARN org.apache.hadoop.conf.Configuration: mapred.cache.localFiles is deprecated. Instead, use mapreduce.job.cache.local.files
+2014-11-05 09:25:32,123 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2014-11-05 09:25:32,124 INFO org.apache.crunch.hadoop.mapreduce.lib.jobcontrol.CrunchControlledJob: Running job "de.bitocean.crunchts.simple.ImportClickCountData: Text(in)+S0+Avro(out_1415208330230) (1/1)"
+2014-11-05 09:25:32,124 INFO org.apache.crunch.hadoop.mapreduce.lib.jobcontrol.CrunchControlledJob: Job status available at: http://localhost:8080/
+2014-11-05 09:25:32,126 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2014-11-05 09:25:32,130 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2014-11-05 09:25:32,149 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2014-11-05 09:25:32,149 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local781356117_0001_m_000000_0
+2014-11-05 09:25:32,218 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 09:25:32,221 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-000000.gz:0+87052866)
+2014-11-05 09:25:32,248 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 09:25:35,181 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local781356117_0001_m_000001_0
+2014-11-05 09:25:35,185 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 09:25:35,186 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-030000.gz:0+85980815)
+2014-11-05 09:25:35,190 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 09:25:36,023 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local781356117_0001_m_000002_0
+2014-11-05 09:25:36,024 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 09:25:36,025 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-020000.gz:0+83397233)
+2014-11-05 09:25:36,029 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 09:25:36,770 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local781356117_0001_m_000003_0
+2014-11-05 09:25:36,771 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 09:25:36,772 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-010000.gz:0+78524252)
+2014-11-05 09:25:36,776 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 09:25:37,517 INFO org.apache.hadoop.mapred.LocalJobRunner: Map task executor complete.
+2014-11-05 09:25:37,519 WARN org.apache.hadoop.mapred.LocalJobRunner: job_local781356117_0001
+java.lang.Exception: java.lang.ClassCastException: org.apache.crunch.impl.mr.run.CrunchInputSplit cannot be cast to org.apache.hadoop.mapreduce.lib.input.FileSplit
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:401)
+Caused by: java.lang.ClassCastException: org.apache.crunch.impl.mr.run.CrunchInputSplit cannot be cast to org.apache.hadoop.mapreduce.lib.input.FileSplit
+	at de.bitocean.crunchts.simple.ImportClickCountData$1.process(ImportClickCountData.java:84)
+	at de.bitocean.crunchts.simple.ImportClickCountData$1.process(ImportClickCountData.java:1)
+	at org.apache.crunch.impl.mr.run.RTNode.process(RTNode.java:99)
+	at org.apache.crunch.impl.mr.emit.IntermediateEmitter.emit(IntermediateEmitter.java:56)
+	at org.apache.crunch.MapFn.process(MapFn.java:34)
+	at org.apache.crunch.impl.mr.run.RTNode.process(RTNode.java:99)
+	at org.apache.crunch.impl.mr.run.RTNode.process(RTNode.java:110)
+	at org.apache.crunch.impl.mr.run.CrunchMapper.map(CrunchMapper.java:60)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:144)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:756)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:338)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:233)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+2014-11-05 09:25:38,212 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2014-11-05 09:31:40,298 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2014-11-05 09:31:41,222 INFO org.apache.crunch.io.impl.FileTargetImpl: Will write output files to new path: out_1415208700777
+2014-11-05 09:31:41,252 WARN org.apache.hadoop.conf.Configuration: mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2014-11-05 09:31:41,555 WARN org.apache.hadoop.conf.Configuration: session.id is deprecated. Instead, use dfs.metrics.session-id
+2014-11-05 09:31:41,555 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2014-11-05 09:31:41,605 WARN org.apache.hadoop.mapreduce.JobSubmitter: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2014-11-05 09:31:41,665 WARN org.apache.hadoop.conf.Configuration: dfs.block.size is deprecated. Instead, use dfs.blocksize
+2014-11-05 09:31:41,667 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 4
+2014-11-05 09:31:41,752 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:4
+2014-11-05 09:31:41,781 WARN org.apache.hadoop.conf.Configuration: mapred.cache.files is deprecated. Instead, use mapreduce.job.cache.files
+2014-11-05 09:31:41,782 WARN org.apache.hadoop.conf.Configuration: mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+2014-11-05 09:31:41,782 WARN org.apache.hadoop.conf.Configuration: mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+2014-11-05 09:31:41,782 WARN org.apache.hadoop.conf.Configuration: mapreduce.map.class is deprecated. Instead, use mapreduce.job.map.class
+2014-11-05 09:31:41,782 WARN org.apache.hadoop.conf.Configuration: mapred.job.name is deprecated. Instead, use mapreduce.job.name
+2014-11-05 09:31:41,782 WARN org.apache.hadoop.conf.Configuration: mapreduce.inputformat.class is deprecated. Instead, use mapreduce.job.inputformat.class
+2014-11-05 09:31:41,783 WARN org.apache.hadoop.conf.Configuration: mapred.output.dir is deprecated. Instead, use mapreduce.output.fileoutputformat.outputdir
+2014-11-05 09:31:41,783 WARN org.apache.hadoop.conf.Configuration: mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
+2014-11-05 09:31:41,783 WARN org.apache.hadoop.conf.Configuration: mapred.cache.files.timestamps is deprecated. Instead, use mapreduce.job.cache.files.timestamps
+2014-11-05 09:31:41,783 WARN org.apache.hadoop.conf.Configuration: mapred.working.dir is deprecated. Instead, use mapreduce.job.working.dir
+2014-11-05 09:31:41,898 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local1006677986_0001
+2014-11-05 09:31:42,370 INFO org.apache.hadoop.mapred.LocalDistributedCacheManager: Localized file:/tmp/crunch-1999369028/p1/MAP as file:/tmp/hadoop-training/mapred/local/-8065558477820771193/MAP
+2014-11-05 09:31:42,387 WARN org.apache.hadoop.conf.Configuration: mapred.cache.localFiles is deprecated. Instead, use mapreduce.job.cache.local.files
+2014-11-05 09:31:42,518 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2014-11-05 09:31:42,518 INFO org.apache.crunch.hadoop.mapreduce.lib.jobcontrol.CrunchControlledJob: Running job "de.bitocean.crunchts.simple.ImportClickCountData: Text(in)+S0+Avro(out_1415208700777) (1/1)"
+2014-11-05 09:31:42,518 INFO org.apache.crunch.hadoop.mapreduce.lib.jobcontrol.CrunchControlledJob: Job status available at: http://localhost:8080/
+2014-11-05 09:31:42,519 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2014-11-05 09:31:42,528 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2014-11-05 09:31:42,553 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2014-11-05 09:31:42,553 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1006677986_0001_m_000000_0
+2014-11-05 09:31:42,616 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 09:31:42,618 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-000000.gz:0+87052866)
+2014-11-05 09:31:42,651 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 09:31:46,148 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1006677986_0001_m_000001_0
+2014-11-05 09:31:46,150 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 09:31:46,150 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-030000.gz:0+85980815)
+2014-11-05 09:31:46,180 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 09:31:46,976 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1006677986_0001_m_000002_0
+2014-11-05 09:31:46,977 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 09:31:46,977 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-020000.gz:0+83397233)
+2014-11-05 09:31:46,982 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 09:31:47,676 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1006677986_0001_m_000003_0
+2014-11-05 09:31:47,677 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2014-11-05 09:31:47,678 INFO org.apache.hadoop.mapred.MapTask: Processing split: CrunchInputSplit(Paths:/home/training/workspace2/crunchTS/in/pagecounts-20141101-010000.gz:0+78524252)
+2014-11-05 09:31:47,682 INFO org.apache.hadoop.io.compress.CodecPool: Got brand-new decompressor [.gz]
+2014-11-05 09:31:48,388 INFO org.apache.hadoop.mapred.LocalJobRunner: Map task executor complete.
+2014-11-05 09:31:48,389 WARN org.apache.hadoop.mapred.LocalJobRunner: job_local1006677986_0001
+java.lang.Exception: java.lang.ClassCastException: org.apache.crunch.impl.mr.run.CrunchInputSplit cannot be cast to com.google.common.base.Supplier
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:401)
+Caused by: java.lang.ClassCastException: org.apache.crunch.impl.mr.run.CrunchInputSplit cannot be cast to com.google.common.base.Supplier
+	at de.bitocean.crunchts.simple.ImportClickCountData$1.process(ImportClickCountData.java:82)
+	at de.bitocean.crunchts.simple.ImportClickCountData$1.process(ImportClickCountData.java:1)
+	at org.apache.crunch.impl.mr.run.RTNode.process(RTNode.java:99)
+	at org.apache.crunch.impl.mr.emit.IntermediateEmitter.emit(IntermediateEmitter.java:56)
+	at org.apache.crunch.MapFn.process(MapFn.java:34)
+	at org.apache.crunch.impl.mr.run.RTNode.process(RTNode.java:99)
+	at org.apache.crunch.impl.mr.run.RTNode.process(RTNode.java:110)
+	at org.apache.crunch.impl.mr.run.CrunchMapper.map(CrunchMapper.java:60)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:144)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:756)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:338)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:233)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+2014-11-05 09:31:48,601 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map

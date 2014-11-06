@@ -1,6 +1,6 @@
 package de.bitocean.crunchts.simple;
 
-import de.bitocean.crunchts.data.EventTSRecord;
+import org.apache.crunchts.types.EventTSRecord;
 
 import org.apache.crunch.DoFn;
 import org.apache.crunch.Emitter;

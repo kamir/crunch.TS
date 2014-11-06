@@ -49,9 +49,9 @@
       <attribute value="jar:file:/home/training/.m2/repository/commons-codec/commons-codec/1.6/commons-codec-1.6-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/commons-io/commons-io/2.1/commons-io-2.1.jar">
+  <classpathentry kind="var" path="M2_REPO/commons-io/commons-io/2.4/commons-io-2.4.jar">
     <attributes>
-      <attribute value="jar:file:/home/training/.m2/repository/commons-io/commons-io/2.1/commons-io-2.1-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/home/training/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
   <classpathentry kind="var" path="M2_REPO/commons-net/commons-net/3.1/commons-net-3.1.jar">
@@ -338,4 +338,234 @@
   </classpathentry>
   <classpathentry kind="var" path="M2_REPO/org/apache/mahout/commons/commons-cli/2.0-mahout/commons-cli-2.0-mahout.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/apache/hadoop/hadoop-core/0.20.204.0/hadoop-core-0.20.204.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-runtime/2.7.1/sesame-runtime-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-runtime/2.7.1/sesame-runtime-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-model/2.7.1/sesame-model-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-model/2.7.1/sesame-model-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-util/2.7.1/sesame-util-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-util/2.7.1/sesame-util-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-repository-api/2.7.1/sesame-repository-api-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-repository-api/2.7.1/sesame-repository-api-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-query/2.7.1/sesame-query-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-query/2.7.1/sesame-query-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-rio-api/2.7.1/sesame-rio-api-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-rio-api/2.7.1/sesame-rio-api-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-repository-manager/2.7.1/sesame-repository-manager-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-repository-manager/2.7.1/sesame-repository-manager-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-repository-event/2.7.1/sesame-repository-event-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-repository-event/2.7.1/sesame-repository-event-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-repository-sail/2.7.1/sesame-repository-sail-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-repository-sail/2.7.1/sesame-repository-sail-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-sail-api/2.7.1/sesame-sail-api-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-sail-api/2.7.1/sesame-sail-api-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-queryalgebra-model/2.7.1/sesame-queryalgebra-model-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-queryalgebra-model/2.7.1/sesame-queryalgebra-model-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-queryparser-api/2.7.1/sesame-queryparser-api-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-queryparser-api/2.7.1/sesame-queryparser-api-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-sail-memory/2.7.1/sesame-sail-memory-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-sail-memory/2.7.1/sesame-sail-memory-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-sail-inferencer/2.7.1/sesame-sail-inferencer-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-sail-inferencer/2.7.1/sesame-sail-inferencer-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-queryparser-serql/2.7.1/sesame-queryparser-serql-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-queryparser-serql/2.7.1/sesame-queryparser-serql-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-queryalgebra-evaluation/2.7.1/sesame-queryalgebra-evaluation-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-queryalgebra-evaluation/2.7.1/sesame-queryalgebra-evaluation-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-repository-sparql/2.7.1/sesame-repository-sparql-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-repository-sparql/2.7.1/sesame-repository-sparql-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-http-client/2.7.1/sesame-http-client-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-http-client/2.7.1/sesame-http-client-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-http-protocol/2.7.1/sesame-http-protocol-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-http-protocol/2.7.1/sesame-http-protocol-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-rio-ntriples/2.7.1/sesame-rio-ntriples-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-rio-ntriples/2.7.1/sesame-rio-ntriples-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-rio-datatypes/2.7.1/sesame-rio-datatypes-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-rio-datatypes/2.7.1/sesame-rio-datatypes-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-rio-languages/2.7.1/sesame-rio-languages-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-rio-languages/2.7.1/sesame-rio-languages-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-queryresultio-api/2.7.1/sesame-queryresultio-api-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-queryresultio-api/2.7.1/sesame-queryresultio-api-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-queryparser-sparql/2.7.1/sesame-queryparser-sparql-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-queryparser-sparql/2.7.1/sesame-queryparser-sparql-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-queryresultio-sparqlxml/2.7.1/sesame-queryresultio-sparqlxml-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-queryresultio-sparqlxml/2.7.1/sesame-queryresultio-sparqlxml-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-repository-http/2.7.1/sesame-repository-http-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-repository-http/2.7.1/sesame-repository-http-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-repository-contextaware/2.7.1/sesame-repository-contextaware-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-repository-contextaware/2.7.1/sesame-repository-contextaware-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-sail-federation/2.7.1/sesame-sail-federation-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-sail-federation/2.7.1/sesame-sail-federation-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-rio-turtle/2.7.1/sesame-rio-turtle-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-rio-turtle/2.7.1/sesame-rio-turtle-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-queryresultio-binary/2.7.1/sesame-queryresultio-binary-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-queryresultio-binary/2.7.1/sesame-queryresultio-binary-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-queryresultio-sparqljson/2.7.1/sesame-queryresultio-sparqljson-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-queryresultio-sparqljson/2.7.1/sesame-queryresultio-sparqljson-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-core/2.1.4/jackson-core-2.1.4.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.4/jackson-core-2.1.4-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-queryresultio-text/2.7.1/sesame-queryresultio-text-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-queryresultio-text/2.7.1/sesame-queryresultio-text-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/net/sf/opencsv/opencsv/2.0/opencsv-2.0.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/net/sf/opencsv/opencsv/2.0/opencsv-2.0-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-repository-dataset/2.7.1/sesame-repository-dataset-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-repository-dataset/2.7.1/sesame-repository-dataset-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-rio-binary/2.7.1/sesame-rio-binary-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-rio-binary/2.7.1/sesame-rio-binary-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-rio-nquads/2.7.1/sesame-rio-nquads-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-rio-nquads/2.7.1/sesame-rio-nquads-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-rio-n3/2.7.1/sesame-rio-n3-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-rio-n3/2.7.1/sesame-rio-n3-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-rio-rdfjson/2.7.1/sesame-rio-rdfjson-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-rio-rdfjson/2.7.1/sesame-rio-rdfjson-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-rio-rdfxml/2.7.1/sesame-rio-rdfxml-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-rio-rdfxml/2.7.1/sesame-rio-rdfxml-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-rio-trix/2.7.1/sesame-rio-trix-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-rio-trix/2.7.1/sesame-rio-trix-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-rio-trig/2.7.1/sesame-rio-trig-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-rio-trig/2.7.1/sesame-rio-trig-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-sail-nativerdf/2.7.1/sesame-sail-nativerdf-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-sail-nativerdf/2.7.1/sesame-sail-nativerdf-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/openrdf/sesame/sesame-sail-rdbms/2.7.1/sesame-sail-rdbms-2.7.1.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/org/openrdf/sesame/sesame-sail-rdbms/2.7.1/sesame-sail-rdbms-2.7.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/commons-dbcp/commons-dbcp/1.3/commons-dbcp-1.3.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/commons-dbcp/commons-dbcp/1.3/commons-dbcp-1.3-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar">
+    <attributes>
+      <attribute value="jar:file:/home/training/.m2/repository/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
 </classpath>

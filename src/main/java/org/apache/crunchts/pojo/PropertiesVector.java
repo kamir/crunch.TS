@@ -1,7 +1,5 @@
 package org.apache.crunchts.pojo;
 
-import hadoopts.core.TSData;
-
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -10,13 +8,13 @@ import java.io.StringWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.Properties;
 
+import org.apache.crunchts.TSData;
 import org.apache.mahout.math.DenseVector;
 import org.apache.mahout.math.NamedVector;
 import org.apache.mahout.math.Vector;
 import org.apache.mahout.math.VectorWritable;
 
-import statphys.ris.experimental.TSPropertyTester;
-import data.series.Messreihe;
+
  
 
 /**
@@ -64,20 +62,15 @@ public class PropertiesVector {
 	}
 	
 	public static void main(String[] args) {
+		
+		stdlib.StdRandom.initRandomGen(1);
 		TSData data = new TSData();
-        data.dataset = rescaleRandomData( data.getRandomData((int) Math.pow(2, EXP)) , 24.0 );
-        Messreihe mr = data.getMessreihe();
-        if ( SAMPLES < TSPropertyTester.zSAMPLES) TSPropertyTester.addSample( mr );
-        SAMPLES++;
-        /**
-         * 
-         * Here we lose the METADATA of each row!!!
-         * 
-         */
-        System.out.print("  (" + i + ")");
+        data.dataset = data.getRandomData((int) Math.pow(2, 10));
+  
         NamedVector nv = new NamedVector(new DenseVector(data.getData()), data.label);
         VectorWritable vec = new VectorWritable();
         vec.set(nv);
+        
 	}
 	
 }

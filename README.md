@@ -1,7 +1,10 @@
 crunch.TS
 =========
 
-The goal of Crunch.TS is to implement reusable data structures and reusable analysis algorithms for several "standard & advanced time series" analysis tasks. The work is based on Hadoop.TS which (http://www.ijcaonline.org/archives/volume74/number17/12974-0233) is also on Guthub.
+In Crunch.TS we implement reusable data structures to represent time series data from several domains.
+Several time series analysis algorithms are implemented for Hadoop applications. The project is based 
+on Hadoop.TS which (http://www.ijcaonline.org/archives/volume74/number17/12974-0233) is also on Github, 
+but not maintained any more.
 
 There are at least two groups or types of time series: "continuos equidistant time series" and "event time series". 
 Both can be converted into each other (if certain conditions are met), but therefore some metadata is required.

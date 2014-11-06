@@ -1,0 +1,34 @@
+{ "doc" : "Avro-Record based on the description on http://dumps.wikimedia.org/other/pagecounts-raw/",
+  "type" : "record",
+  "name" : "ClickCount",
+  "namespace" : "org.apache.crunchts.types.wikipedia.analysis",
+  "fields" : [ {
+    "name" : "year",
+    "type" : "int"
+  },
+  {
+    "name" : "month",
+    "type" : "int"
+  },
+  {
+    "name" : "day",
+    "type" : "int"
+  },
+  {
+    "name" : "hour",
+    "type" : "string"
+  }, 
+  {
+    "name" : "projectname",
+    "type" : "string"
+  }, {
+    "name" : "pagename",
+    "type" : "string"
+  }, {
+    "name" : "clicks",
+    "type" : "long"
+  }, {
+    "name" : "volume",
+    "type" : "long"
+  } ]
+}

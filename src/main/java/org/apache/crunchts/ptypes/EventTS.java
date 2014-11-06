@@ -10,8 +10,8 @@ import org.apache.crunch.MapFn;
 import org.apache.crunch.types.writable.Writables;
 import org.apache.crunchts.pojo.AbstractTS;
 
-import de.bitocean.crunchts.data.EventTSRecord;
-import de.bitocean.crunchts.data.Event;
+import org.apache.crunchts.types.EventTSRecord;
+import org.apache.crunchts.types.Event;
 
 public class EventTS extends AbstractTS {
 	
