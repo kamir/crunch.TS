@@ -1,0 +1,11 @@
+{"key": "de_Berlin", "value": {"timestamp": 1414810800000, "year": 2014, "month": 11, "day": 1, "hour": "030000.gz", "projectname": "de", "pagename": "Berlin", "clicks": 46, "volume": 12422696}}
+{"key": "de_Berlin", "value": {"timestamp": 1414803600000, "year": 2014, "month": 11, "day": 1, "hour": "010000.gz", "projectname": "de", "pagename": "Berlin", "clicks": 53, "volume": 10856975}}
+{"key": "de_Berlin", "value": {"timestamp": 1414800000000, "year": 2014, "month": 11, "day": 1, "hour": "000000.gz", "projectname": "de", "pagename": "Berlin", "clicks": 80, "volume": 13991772}}
+{"key": "de_Berlin", "value": {"timestamp": 1414807200000, "year": 2014, "month": 11, "day": 1, "hour": "020000.gz", "projectname": "de", "pagename": "Berlin", "clicks": 47, "volume": 9564565}}
+{"key": "de_DAX", "value": {"timestamp": 1414807200000, "year": 2014, "month": 11, "day": 1, "hour": "020000.gz", "projectname": "de", "pagename": "DAX", "clicks": 8, "volume": 409112}}
+{"key": "de_DAX", "value": {"timestamp": 1414803600000, "year": 2014, "month": 11, "day": 1, "hour": "010000.gz", "projectname": "de", "pagename": "DAX", "clicks": 10, "volume": 332879}}
+{"key": "de_DAX", "value": {"timestamp": 1414810800000, "year": 2014, "month": 11, "day": 1, "hour": "030000.gz", "projectname": "de", "pagename": "DAX", "clicks": 6, "volume": 222602}}
+{"key": "de_DAX", "value": {"timestamp": 1414800000000, "year": 2014, "month": 11, "day": 1, "hour": "000000.gz", "projectname": "de", "pagename": "DAX", "clicks": 6, "volume": 221888}}
+{"key": "de_Meiningen", "value": {"timestamp": 1414800000000, "year": 2014, "month": 11, "day": 1, "hour": "000000.gz", "projectname": "de", "pagename": "Meiningen", "clicks": 1, "volume": 72381}}
+{"key": "de_Meiningen", "value": {"timestamp": 1414807200000, "year": 2014, "month": 11, "day": 1, "hour": "020000.gz", "projectname": "de", "pagename": "Meiningen", "clicks": 3, "volume": 641581}}
+{"key": "de_Meiningen", "value": {"timestamp": 1414803600000, "year": 2014, "month": 11, "day": 1, "hour": "010000.gz", "projectname": "de", "pagename": "Meiningen", "clicks": 1, "volume": 72911}}

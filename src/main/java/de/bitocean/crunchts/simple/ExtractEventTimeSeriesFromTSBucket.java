@@ -52,8 +52,8 @@ public class ExtractEventTimeSeriesFromTSBucket extends CrunchTool {
 		PCollection<ContEquidistTS> converted = covertFromVectorWritables( tsb );
 		
 		PCollection<EventTSRecord> extracted = extractContEquidistTS( converted );
-			
-		AvroFileTarget target1 = new AvroFileTarget( new Path( args[1] + "_converted_ced_avro" ) );
+
+               	AvroFileTarget target1 = new AvroFileTarget( new Path( args[1] + "_converted_ced_avro" ) );
 		this.write( converted, target1);
 		
 		AvroFileTarget target2 = new AvroFileTarget( new Path( args[1] + "_extracted_events_avro" ) );

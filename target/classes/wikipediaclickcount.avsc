@@ -2,7 +2,12 @@
   "type" : "record",
   "name" : "ClickCount",
   "namespace" : "org.apache.crunchts.types.wikipedia.analysis",
-  "fields" : [ {
+  "fields" : [ 
+  {
+    "name" : "timestamp",
+    "type" : "long"
+  },
+  {
     "name" : "year",
     "type" : "int"
   },

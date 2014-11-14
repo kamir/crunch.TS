@@ -1,0 +1,38 @@
+{
+  "namespace" : "de.bitocean.data",
+  "name" : "WebResource",
+  "type" : "record",
+
+  "fields" : 
+  [ {
+    "name" : "uri",
+    "type" : "string"
+  }, {
+    "name" : "kOut",
+    "type" : "long"
+  }, {
+    "name" : "context",
+    "type" : "string"
+  }, {
+    "name" : "depth",
+    "type" : "int"
+  }, {
+    "name" : "run",
+    "type" : "string"
+  }, {
+    "name" : "plainContent",
+    "type" : "string"
+  }, {
+    "name" : "parsedContent",
+    "type" : "string"
+  }, {
+    "name" : "lText",
+    "type" : "long"
+  }, {
+    "name" : "lHTML",
+    "type" : "long"
+  }, {
+    "name" : "lang",
+    "type" : "string"
+  } ]
+}

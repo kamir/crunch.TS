@@ -8,8 +8,9 @@ package org.apache.crunchts.types.wikipedia.analysis;
 /** Avro-Record based on the description on http://dumps.wikimedia.org/other/pagecounts-raw/ */
 @org.apache.avro.specific.AvroGenerated
 public class ClickCount extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ClickCount\",\"namespace\":\"org.apache.crunchts.types.wikipedia.analysis\",\"doc\":\"Avro-Record based on the description on http://dumps.wikimedia.org/other/pagecounts-raw/\",\"fields\":[{\"name\":\"year\",\"type\":\"int\"},{\"name\":\"month\",\"type\":\"int\"},{\"name\":\"day\",\"type\":\"int\"},{\"name\":\"hour\",\"type\":\"string\"},{\"name\":\"projectname\",\"type\":\"string\"},{\"name\":\"pagename\",\"type\":\"string\"},{\"name\":\"clicks\",\"type\":\"long\"},{\"name\":\"volume\",\"type\":\"long\"}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ClickCount\",\"namespace\":\"org.apache.crunchts.types.wikipedia.analysis\",\"doc\":\"Avro-Record based on the description on http://dumps.wikimedia.org/other/pagecounts-raw/\",\"fields\":[{\"name\":\"timestamp\",\"type\":\"long\"},{\"name\":\"year\",\"type\":\"int\"},{\"name\":\"month\",\"type\":\"int\"},{\"name\":\"day\",\"type\":\"int\"},{\"name\":\"hour\",\"type\":\"string\"},{\"name\":\"projectname\",\"type\":\"string\"},{\"name\":\"pagename\",\"type\":\"string\"},{\"name\":\"clicks\",\"type\":\"long\"},{\"name\":\"volume\",\"type\":\"long\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
+  @Deprecated public long timestamp;
   @Deprecated public int year;
   @Deprecated public int month;
   @Deprecated public int day;
@@ -27,7 +28,8 @@ public class ClickCount extends org.apache.avro.specific.SpecificRecordBase impl
   /**
    * All-args constructor.
    */
-  public ClickCount(java.lang.Integer year, java.lang.Integer month, java.lang.Integer day, java.lang.CharSequence hour, java.lang.CharSequence projectname, java.lang.CharSequence pagename, java.lang.Long clicks, java.lang.Long volume) {
+  public ClickCount(java.lang.Long timestamp, java.lang.Integer year, java.lang.Integer month, java.lang.Integer day, java.lang.CharSequence hour, java.lang.CharSequence projectname, java.lang.CharSequence pagename, java.lang.Long clicks, java.lang.Long volume) {
+    this.timestamp = timestamp;
     this.year = year;
     this.month = month;
     this.day = day;
@@ -42,14 +44,15 @@ public class ClickCount extends org.apache.avro.specific.SpecificRecordBase impl
   // Used by DatumWriter.  Applications should not call. 
   public java.lang.Object get(int field$) {
     switch (field$) {
-    case 0: return year;
-    case 1: return month;
-    case 2: return day;
-    case 3: return hour;
-    case 4: return projectname;
-    case 5: return pagename;
-    case 6: return clicks;
-    case 7: return volume;
+    case 0: return timestamp;
+    case 1: return year;
+    case 2: return month;
+    case 3: return day;
+    case 4: return hour;
+    case 5: return projectname;
+    case 6: return pagename;
+    case 7: return clicks;
+    case 8: return volume;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -57,16 +60,32 @@ public class ClickCount extends org.apache.avro.specific.SpecificRecordBase impl
   @SuppressWarnings(value="unchecked")
   public void put(int field$, java.lang.Object value$) {
     switch (field$) {
-    case 0: year = (java.lang.Integer)value$; break;
-    case 1: month = (java.lang.Integer)value$; break;
-    case 2: day = (java.lang.Integer)value$; break;
-    case 3: hour = (java.lang.CharSequence)value$; break;
-    case 4: projectname = (java.lang.CharSequence)value$; break;
-    case 5: pagename = (java.lang.CharSequence)value$; break;
-    case 6: clicks = (java.lang.Long)value$; break;
-    case 7: volume = (java.lang.Long)value$; break;
+    case 0: timestamp = (java.lang.Long)value$; break;
+    case 1: year = (java.lang.Integer)value$; break;
+    case 2: month = (java.lang.Integer)value$; break;
+    case 3: day = (java.lang.Integer)value$; break;
+    case 4: hour = (java.lang.CharSequence)value$; break;
+    case 5: projectname = (java.lang.CharSequence)value$; break;
+    case 6: pagename = (java.lang.CharSequence)value$; break;
+    case 7: clicks = (java.lang.Long)value$; break;
+    case 8: volume = (java.lang.Long)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
+  }
+
+  /**
+   * Gets the value of the 'timestamp' field.
+   */
+  public java.lang.Long getTimestamp() {
+    return timestamp;
+  }
+
+  /**
+   * Sets the value of the 'timestamp' field.
+   * @param value the value to set.
+   */
+  public void setTimestamp(java.lang.Long value) {
+    this.timestamp = value;
   }
 
   /**
@@ -210,6 +229,7 @@ public class ClickCount extends org.apache.avro.specific.SpecificRecordBase impl
   public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<ClickCount>
     implements org.apache.avro.data.RecordBuilder<ClickCount> {
 
+    private long timestamp;
     private int year;
     private int month;
     private int day;
@@ -232,38 +252,66 @@ public class ClickCount extends org.apache.avro.specific.SpecificRecordBase impl
     /** Creates a Builder by copying an existing ClickCount instance */
     private Builder(org.apache.crunchts.types.wikipedia.analysis.ClickCount other) {
             super(org.apache.crunchts.types.wikipedia.analysis.ClickCount.SCHEMA$);
-      if (isValidValue(fields()[0], other.year)) {
-        this.year = data().deepCopy(fields()[0].schema(), other.year);
+      if (isValidValue(fields()[0], other.timestamp)) {
+        this.timestamp = data().deepCopy(fields()[0].schema(), other.timestamp);
         fieldSetFlags()[0] = true;
       }
-      if (isValidValue(fields()[1], other.month)) {
-        this.month = data().deepCopy(fields()[1].schema(), other.month);
+      if (isValidValue(fields()[1], other.year)) {
+        this.year = data().deepCopy(fields()[1].schema(), other.year);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.day)) {
-        this.day = data().deepCopy(fields()[2].schema(), other.day);
+      if (isValidValue(fields()[2], other.month)) {
+        this.month = data().deepCopy(fields()[2].schema(), other.month);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.hour)) {
-        this.hour = data().deepCopy(fields()[3].schema(), other.hour);
+      if (isValidValue(fields()[3], other.day)) {
+        this.day = data().deepCopy(fields()[3].schema(), other.day);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.projectname)) {
-        this.projectname = data().deepCopy(fields()[4].schema(), other.projectname);
+      if (isValidValue(fields()[4], other.hour)) {
+        this.hour = data().deepCopy(fields()[4].schema(), other.hour);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.pagename)) {
-        this.pagename = data().deepCopy(fields()[5].schema(), other.pagename);
+      if (isValidValue(fields()[5], other.projectname)) {
+        this.projectname = data().deepCopy(fields()[5].schema(), other.projectname);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.clicks)) {
-        this.clicks = data().deepCopy(fields()[6].schema(), other.clicks);
+      if (isValidValue(fields()[6], other.pagename)) {
+        this.pagename = data().deepCopy(fields()[6].schema(), other.pagename);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.volume)) {
-        this.volume = data().deepCopy(fields()[7].schema(), other.volume);
+      if (isValidValue(fields()[7], other.clicks)) {
+        this.clicks = data().deepCopy(fields()[7].schema(), other.clicks);
         fieldSetFlags()[7] = true;
       }
+      if (isValidValue(fields()[8], other.volume)) {
+        this.volume = data().deepCopy(fields()[8].schema(), other.volume);
+        fieldSetFlags()[8] = true;
+      }
+    }
+
+    /** Gets the value of the 'timestamp' field */
+    public java.lang.Long getTimestamp() {
+      return timestamp;
+    }
+    
+    /** Sets the value of the 'timestamp' field */
+    public org.apache.crunchts.types.wikipedia.analysis.ClickCount.Builder setTimestamp(long value) {
+      validate(fields()[0], value);
+      this.timestamp = value;
+      fieldSetFlags()[0] = true;
+      return this; 
+    }
+    
+    /** Checks whether the 'timestamp' field has been set */
+    public boolean hasTimestamp() {
+      return fieldSetFlags()[0];
+    }
+    
+    /** Clears the value of the 'timestamp' field */
+    public org.apache.crunchts.types.wikipedia.analysis.ClickCount.Builder clearTimestamp() {
+      fieldSetFlags()[0] = false;
+      return this;
     }
 
     /** Gets the value of the 'year' field */
@@ -273,20 +321,20 @@ public class ClickCount extends org.apache.avro.specific.SpecificRecordBase impl
     
     /** Sets the value of the 'year' field */
     public org.apache.crunchts.types.wikipedia.analysis.ClickCount.Builder setYear(int value) {
-      validate(fields()[0], value);
+      validate(fields()[1], value);
       this.year = value;
-      fieldSetFlags()[0] = true;
+      fieldSetFlags()[1] = true;
       return this; 
     }
     
     /** Checks whether the 'year' field has been set */
     public boolean hasYear() {
-      return fieldSetFlags()[0];
+      return fieldSetFlags()[1];
     }
     
     /** Clears the value of the 'year' field */
     public org.apache.crunchts.types.wikipedia.analysis.ClickCount.Builder clearYear() {
-      fieldSetFlags()[0] = false;
+      fieldSetFlags()[1] = false;
       return this;
     }
 
@@ -297,20 +345,20 @@ public class ClickCount extends org.apache.avro.specific.SpecificRecordBase impl
     
     /** Sets the value of the 'month' field */
     public org.apache.crunchts.types.wikipedia.analysis.ClickCount.Builder setMonth(int value) {
-      validate(fields()[1], value);
+      validate(fields()[2], value);
       this.month = value;
-      fieldSetFlags()[1] = true;
+      fieldSetFlags()[2] = true;
       return this; 
     }
     
     /** Checks whether the 'month' field has been set */
     public boolean hasMonth() {
-      return fieldSetFlags()[1];
+      return fieldSetFlags()[2];
     }
     
     /** Clears the value of the 'month' field */
     public org.apache.crunchts.types.wikipedia.analysis.ClickCount.Builder clearMonth() {
-      fieldSetFlags()[1] = false;
+      fieldSetFlags()[2] = false;
       return this;
     }
 
@@ -321,20 +369,20 @@ public class ClickCount extends org.apache.avro.specific.SpecificRecordBase impl
     
     /** Sets the value of the 'day' field */
     public org.apache.crunchts.types.wikipedia.analysis.ClickCount.Builder setDay(int value) {
-      validate(fields()[2], value);
+      validate(fields()[3], value);
       this.day = value;
-      fieldSetFlags()[2] = true;
+      fieldSetFlags()[3] = true;
       return this; 
     }
     
     /** Checks whether the 'day' field has been set */
     public boolean hasDay() {
-      return fieldSetFlags()[2];
+      return fieldSetFlags()[3];
     }
     
     /** Clears the value of the 'day' field */
     public org.apache.crunchts.types.wikipedia.analysis.ClickCount.Builder clearDay() {
-      fieldSetFlags()[2] = false;
+      fieldSetFlags()[3] = false;
       return this;
     }
 
@@ -345,21 +393,21 @@ public class ClickCount extends org.apache.avro.specific.SpecificRecordBase impl
     
     /** Sets the value of the 'hour' field */
     public org.apache.crunchts.types.wikipedia.analysis.ClickCount.Builder setHour(java.lang.CharSequence value) {
-      validate(fields()[3], value);
+      validate(fields()[4], value);
       this.hour = value;
-      fieldSetFlags()[3] = true;
+      fieldSetFlags()[4] = true;
       return this; 
     }
     
     /** Checks whether the 'hour' field has been set */
     public boolean hasHour() {
-      return fieldSetFlags()[3];
+      return fieldSetFlags()[4];
     }
     
     /** Clears the value of the 'hour' field */
     public org.apache.crunchts.types.wikipedia.analysis.ClickCount.Builder clearHour() {
       hour = null;
-      fieldSetFlags()[3] = false;
+      fieldSetFlags()[4] = false;
       return this;
     }
 
@@ -370,21 +418,21 @@ public class ClickCount extends org.apache.avro.specific.SpecificRecordBase impl
     
     /** Sets the value of the 'projectname' field */
     public org.apache.crunchts.types.wikipedia.analysis.ClickCount.Builder setProjectname(java.lang.CharSequence value) {
-      validate(fields()[4], value);
+      validate(fields()[5], value);
       this.projectname = value;
-      fieldSetFlags()[4] = true;
+      fieldSetFlags()[5] = true;
       return this; 
     }
     
     /** Checks whether the 'projectname' field has been set */
     public boolean hasProjectname() {
-      return fieldSetFlags()[4];
+      return fieldSetFlags()[5];
     }
     
     /** Clears the value of the 'projectname' field */
     public org.apache.crunchts.types.wikipedia.analysis.ClickCount.Builder clearProjectname() {
       projectname = null;
-      fieldSetFlags()[4] = false;
+      fieldSetFlags()[5] = false;
       return this;
     }
 
@@ -395,21 +443,21 @@ public class ClickCount extends org.apache.avro.specific.SpecificRecordBase impl
     
     /** Sets the value of the 'pagename' field */
     public org.apache.crunchts.types.wikipedia.analysis.ClickCount.Builder setPagename(java.lang.CharSequence value) {
-      validate(fields()[5], value);
+      validate(fields()[6], value);
       this.pagename = value;
-      fieldSetFlags()[5] = true;
+      fieldSetFlags()[6] = true;
       return this; 
     }
     
     /** Checks whether the 'pagename' field has been set */
     public boolean hasPagename() {
-      return fieldSetFlags()[5];
+      return fieldSetFlags()[6];
     }
     
     /** Clears the value of the 'pagename' field */
     public org.apache.crunchts.types.wikipedia.analysis.ClickCount.Builder clearPagename() {
       pagename = null;
-      fieldSetFlags()[5] = false;
+      fieldSetFlags()[6] = false;
       return this;
     }
 
@@ -420,20 +468,20 @@ public class ClickCount extends org.apache.avro.specific.SpecificRecordBase impl
     
     /** Sets the value of the 'clicks' field */
     public org.apache.crunchts.types.wikipedia.analysis.ClickCount.Builder setClicks(long value) {
-      validate(fields()[6], value);
+      validate(fields()[7], value);
       this.clicks = value;
-      fieldSetFlags()[6] = true;
+      fieldSetFlags()[7] = true;
       return this; 
     }
     
     /** Checks whether the 'clicks' field has been set */
     public boolean hasClicks() {
-      return fieldSetFlags()[6];
+      return fieldSetFlags()[7];
     }
     
     /** Clears the value of the 'clicks' field */
     public org.apache.crunchts.types.wikipedia.analysis.ClickCount.Builder clearClicks() {
-      fieldSetFlags()[6] = false;
+      fieldSetFlags()[7] = false;
       return this;
     }
 
@@ -444,20 +492,20 @@ public class ClickCount extends org.apache.avro.specific.SpecificRecordBase impl
     
     /** Sets the value of the 'volume' field */
     public org.apache.crunchts.types.wikipedia.analysis.ClickCount.Builder setVolume(long value) {
-      validate(fields()[7], value);
+      validate(fields()[8], value);
       this.volume = value;
-      fieldSetFlags()[7] = true;
+      fieldSetFlags()[8] = true;
       return this; 
     }
     
     /** Checks whether the 'volume' field has been set */
     public boolean hasVolume() {
-      return fieldSetFlags()[7];
+      return fieldSetFlags()[8];
     }
     
     /** Clears the value of the 'volume' field */
     public org.apache.crunchts.types.wikipedia.analysis.ClickCount.Builder clearVolume() {
-      fieldSetFlags()[7] = false;
+      fieldSetFlags()[8] = false;
       return this;
     }
 
@@ -465,14 +513,15 @@ public class ClickCount extends org.apache.avro.specific.SpecificRecordBase impl
     public ClickCount build() {
       try {
         ClickCount record = new ClickCount();
-        record.year = fieldSetFlags()[0] ? this.year : (java.lang.Integer) defaultValue(fields()[0]);
-        record.month = fieldSetFlags()[1] ? this.month : (java.lang.Integer) defaultValue(fields()[1]);
-        record.day = fieldSetFlags()[2] ? this.day : (java.lang.Integer) defaultValue(fields()[2]);
-        record.hour = fieldSetFlags()[3] ? this.hour : (java.lang.CharSequence) defaultValue(fields()[3]);
-        record.projectname = fieldSetFlags()[4] ? this.projectname : (java.lang.CharSequence) defaultValue(fields()[4]);
-        record.pagename = fieldSetFlags()[5] ? this.pagename : (java.lang.CharSequence) defaultValue(fields()[5]);
-        record.clicks = fieldSetFlags()[6] ? this.clicks : (java.lang.Long) defaultValue(fields()[6]);
-        record.volume = fieldSetFlags()[7] ? this.volume : (java.lang.Long) defaultValue(fields()[7]);
+        record.timestamp = fieldSetFlags()[0] ? this.timestamp : (java.lang.Long) defaultValue(fields()[0]);
+        record.year = fieldSetFlags()[1] ? this.year : (java.lang.Integer) defaultValue(fields()[1]);
+        record.month = fieldSetFlags()[2] ? this.month : (java.lang.Integer) defaultValue(fields()[2]);
+        record.day = fieldSetFlags()[3] ? this.day : (java.lang.Integer) defaultValue(fields()[3]);
+        record.hour = fieldSetFlags()[4] ? this.hour : (java.lang.CharSequence) defaultValue(fields()[4]);
+        record.projectname = fieldSetFlags()[5] ? this.projectname : (java.lang.CharSequence) defaultValue(fields()[5]);
+        record.pagename = fieldSetFlags()[6] ? this.pagename : (java.lang.CharSequence) defaultValue(fields()[6]);
+        record.clicks = fieldSetFlags()[7] ? this.clicks : (java.lang.Long) defaultValue(fields()[7]);
+        record.volume = fieldSetFlags()[8] ? this.volume : (java.lang.Long) defaultValue(fields()[8]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
