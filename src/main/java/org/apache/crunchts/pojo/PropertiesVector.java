@@ -8,7 +8,7 @@ import java.io.StringWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.Properties;
 
-import org.apache.crunchts.TSData;
+import de.bitocean.data.TSData;
 import org.apache.mahout.math.DenseVector;
 import org.apache.mahout.math.NamedVector;
 import org.apache.mahout.math.Vector;

@@ -4,7 +4,7 @@
   <artifactId>crunchTS</artifactId>
   <packaging>jar</packaging>
   <version>0.0.2-SNAPSHOT</version>
-  <name>crunchTS</name>
+  <name>crunch.TS</name>
   <url>http://maven.apache.org</url>
   <properties>
     <!--hadoopclient.version>2.0.0-cdh4.5.0</hadoopclient.version-->

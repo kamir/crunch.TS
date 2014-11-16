@@ -1,4 +1,4 @@
-package org.apache.crunchts;
+package de.bitocean.data;
 import java.io.BufferedReader;
 import java.io.DataInput;
 import java.io.DataOutput;

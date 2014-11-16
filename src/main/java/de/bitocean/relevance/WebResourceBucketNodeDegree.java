@@ -113,7 +113,7 @@ public class WebResourceBucketNodeDegree extends CrunchTool {
                         fileName = ((CombineFileSplit) inputSplit).getPaths()[0].getName();
                     }
                    
-                    timestamp = wikipedia.TimeStampTool.getTimeInMillis(fileName);
+                    timestamp = de.bitocean.util.wikipedia.TimeStampTool.getTimeInMillis(fileName);
                 } 
                 catch (ClassCastException e) {
                     e.printStackTrace();
