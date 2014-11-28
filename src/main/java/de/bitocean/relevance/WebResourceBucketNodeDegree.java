@@ -43,7 +43,7 @@ public class WebResourceBucketNodeDegree extends CrunchTool {
         
         args = new String[2];
         args[0] = "./data/in/wr";
-        args[1] = "./data/out/degree.dat";
+        args[1] = "/Volumes/MyExternalDrive/CALCULATIONS/data/out/degree.dat";
         
 
 //        if (args.length != 2) {
