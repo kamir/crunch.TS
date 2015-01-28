@@ -10,6 +10,8 @@ import java.util.Map;
 
 /**
  *
+ * This is my own implementation, not really well tested at the moment.
+ * 
  * @author kamir
  */
 public class EntropyTool {
