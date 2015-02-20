@@ -16,6 +16,14 @@
  */
 package org.apache.crunchts;
 
+/**
+ * 
+ * This tool transforms a time series bucket (TSB) into a set of time series
+ * pairs or even triples.
+ * 
+ */
+
+
 import java.io.IOException;
 import java.util.List;
 
