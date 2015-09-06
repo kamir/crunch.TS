@@ -90,7 +90,7 @@ public class CalcTSBProfile extends CrunchTool {
         String folder = "/Volumes/MyExternalDrive/SHARE.VM.MAC/DATA/by_CN_AND_Group";
         String studie = "dissertation_DEMO";
 
-        BufferedWriter wr = new BufferedWriter(new FileWriter(folder + "/profile.dat"));
+        BufferedWriter wr = new BufferedWriter(new FileWriter(folder + "/profile_2.dat"));
 
         wr.write("group & nrOfPages & zAccessTS & sum(A) & <a> & zEditTS & sum(E) & <E> & ");
 
